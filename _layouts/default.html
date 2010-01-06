@@ -1,0 +1,38 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> 
+<html lang='en' xml:lang='en' xmlns='http://www.w3.org/1999/xhtml'> 
+  <head>
+    <title>{{ site.title }} | {{ page.title }}</title>
+    <link charset='utf-8' href='/resources/stylesheets/reset.css' media='screen' rel='stylesheet' type='text/css' />
+    <link charset='utf-8' href='/resources/stylesheets/text.css' media='screen' rel='stylesheet' type='text/css' />
+    <link charset='utf-8' href='/resources/stylesheets/application.css' media='screen' rel='stylesheet' type='text/css' />
+    <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
+  </head>
+  <body>
+    
+    <div id='header'> 
+      <div id='header-container'> 
+        <h1>{{ site.title }}</h1> 
+        <ul id='left-header-links'> 
+          <li><a href="/articles.html">articles</a></li> 
+          <li><a href="/bookself.html">bookself</a></li> 
+        </ul> 
+        <!-- %ul#header-links -->
+        <!-- %li -->
+      </div>
+    </div>
+
+    <div id='container'>
+      <div id='navigation-container'>
+        <div class='navigation'>
+          <div class='navigation-title'>Recent Postings</div>
+          <ul> 
+            <li><a href="articles/fear.html">Fear</a></li> 
+          </ul> 
+        </div> 
+      </div> 
+      <div id='content'>
+        {{ content }}
+      </div>
+    </div>
+  </body>
+</html>
