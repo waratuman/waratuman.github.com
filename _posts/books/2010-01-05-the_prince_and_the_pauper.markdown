@@ -1,8 +1,7 @@
 ---
 title: The Prince and the Pauper
-layout: bookself
-category: books
 layout: book
+category: books
 ---
 
 ![Bookcover for the Prince and the
