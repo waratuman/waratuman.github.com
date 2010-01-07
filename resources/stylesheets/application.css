@@ -193,6 +193,11 @@ ul#bookshelf {
    list-style: none;
 }
 
-ul#bookself {
+ul#bookshelf li {
+   clear: both;
+}
 
+ul#bookshelf .cover {
+   float: left;
+   margin: 0 10px 10px 0;
 }
