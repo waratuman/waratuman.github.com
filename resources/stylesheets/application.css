@@ -197,7 +197,7 @@ ul#bookshelf li {
    clear: both;
 }
 
-ul#bookshelf .cover {
+ul#bookshelf img.cover {
    float: left;
    margin: 0 10px 10px 0;
 }
