@@ -12,6 +12,10 @@ category: books
 
 ### Description
 
+&ldquo;The real cycle you're working on is a cycle called
+&lsquo;yourself&rsquo;&rdqou;
+
+
 One of the most important and influential books of the past
 half-century, Robert M. Pirsig's *Zen and the Art of Motorcycle
 Maintenance* is a powerful, moving, and penetrating examination of how

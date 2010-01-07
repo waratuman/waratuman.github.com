@@ -206,6 +206,7 @@ ul#bookshelf li .author {
    margin-bottom: 20px;
    color: #777;
 }
+ul#bookshelf li h3 { font-size: 1em; }
 
 ul#bookshelf img.cover {
    float: left;
