@@ -11,7 +11,7 @@ title: bookshelf
       <img src="{{ post.book.image }}" alt="{{ post.book.title }}"
       width="176" height="256" class="cover" />
       <h2>{{ post.title }}</h2>
-      {{ post.content | truncate: 200 }}
+      {{ post.content }}
     </li>
   {% endfor %}
 </ul>
