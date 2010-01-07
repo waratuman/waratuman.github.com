@@ -199,6 +199,12 @@ ul#bookshelf li {
 
 ul#bookshelf li h2 {
    font-size: 1.2em;
+   margin: 0;
+}
+
+ul#bookshelf li .author { 
+   margin-bottom: 20px;
+   color: #777;
 }
 
 ul#bookshelf img.cover {
