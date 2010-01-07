@@ -5,11 +5,18 @@ title: bookshelf
 
 <h2>Bookshelf</h2>
 
-{% for post in site.categories.books %}
-{{ post.content }}
-{% endfor %}
-
 <ul id="bookshelf">
+  {% for post in site.categories.books %}
+    <li>
+      <img src="{{ post.book.image }}" alt="{{ post.book.title }}"
+      width="176" height="256" class="cover" />
+      <h2>{{ post.title }}</h2>
+      {{ post.content | truncate: 200 }}
+    </li>
+  {% endfor %}
+</ul>
+
+<ul id="ookshelf">
   <li>
     <img src="/resources/images/books/9780061673733.png" alt="Zen and
     the Art of Motorcycle Maintenance" width="176" height="256"
