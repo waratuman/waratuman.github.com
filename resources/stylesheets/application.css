@@ -197,6 +197,10 @@ ul#bookshelf li {
    clear: both;
 }
 
+ul#bookshelf li h2 {
+   font-size: 1.2em;
+}
+
 ul#bookshelf img.cover {
    float: left;
    margin: 0 10px 10px 0;
