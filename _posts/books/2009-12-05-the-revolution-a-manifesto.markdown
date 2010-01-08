@@ -1,5 +1,5 @@
 ---
-title: The Revolution: A Manifesto
+title: "The Revolution: A Manifesto"
 author: James R. Bracy
 book:
   title: The Revolution: A Manifesto
