@@ -1,8 +1,8 @@
 ---
-title: Poems by Robert Frost: A Boy's Will and North of Boston
+title: "Poems by Robert Frost: A Boy's Will and North of Boston"
 author: James R. Bracy
 book:
-  title: Poems by Robert Frost: A Boy's Will and North of Boston
+  title: "Poems by Robert Frost: A Boy's Will and North of Boston"
   author: Robert Frost
   image: /resources/images/books/9780451527875.png
 category: books

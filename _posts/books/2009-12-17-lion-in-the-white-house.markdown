@@ -1,8 +1,8 @@
 ---
-title: Lion in the White House: A Life of Theodore Roosevelt
+title: "Lion in the White House: A Life of Theodore Roosevelt"
 author: James R. Bracy
 book:
-  title: Lion in the White House: A Life of Theodore Roosevelt
+  title: "Lion in the White House: A Life of Theodore Roosevelt"
   author: Aida D. Donald
   image: /resources/images/books/9780465010240.png
 category: books
