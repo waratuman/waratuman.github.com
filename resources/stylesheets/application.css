@@ -188,6 +188,9 @@ ul.status li.grey { list-style-image: url(/images/api/grey.png); }
 /* = CODE BLOCKS ====================== */
 pre { padding: 10px; border: 1px solid gray; background: #F3F3F3; overflow: auto; }
 
+/* = QUOTES =========================== */
+blockquote { padding: 1em; font-style: italic; }
+
 /* = BOOKSHELF ======================== */
 ul#bookshelf {
    list-style: none;
