@@ -1,0 +1,13 @@
+---
+layout: articles
+title: articles
+---
+
+<h2>Articles</h2>
+
+{% for post in site.categories.articles %}
+  <div class='article'>
+    <h2><a href="{{ site.posts.first.url }}">{{ site.posts.first.title }}</a></h2> 
+    {{ site.posts.first.extract }}
+  </div>
+{% endfor %}
