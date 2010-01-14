@@ -191,6 +191,10 @@ pre { padding: 10px; border: 1px solid gray; background: #F3F3F3; overflow: auto
 /* = QUOTES =========================== */
 blockquote { padding: 1em; font-style: italic; }
 
+/* = ARTICLE ========================== */
+.article h2 a { text-decoration: none; color: inherit; }
+.article h2 a:hover { text-decoration: underline; }
+
 /* = BOOKSHELF ======================== */
 ul#bookshelf {
    list-style: none;

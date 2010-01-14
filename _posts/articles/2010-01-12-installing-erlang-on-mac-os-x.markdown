@@ -3,7 +3,7 @@ title: Installing Erlang on Mac OS X
 author: James R. Bracy
 category: articles
 layout: post
-extract: "<p>The following instructions are for installing Erlang on Mac OS X 10.6 (Snow Leopard)</p>
+extract: "<p>The following instructions are for installing Erlang on Mac OS X 10.6 (Snow Leopard).</p>
 	  <p>Dan Benjamin has commented on the benefits of installing from source and using <code>/usr/local</code>
 	  and his postings can be found <a href='http://hivelogic.com/articles/using_usr_local/'>here</a>
 	  and <a href='http://hivelogic.com/articles/ruby-rails-leopard/'>here</a>&hellip;
@@ -70,7 +70,7 @@ You should now be able to run and compile Erlang programs. Try the following to 
     Eshell V5.7.4  (abort with ^G)
     1> 
 
-A prompt should apear telling you that you are in the Eshell. If everything worked, then the installed worked.
+A prompt should appear telling you that you are in the Eshell. If everything worked, then the installed worked.
 
 To quit the prompt type:
 
