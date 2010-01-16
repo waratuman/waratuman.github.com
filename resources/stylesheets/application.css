@@ -196,6 +196,9 @@ blockquote { padding: 1em; font-style: italic; }
 .article h2 a { text-decoration: none; color: inherit; }
 .article h2 a:hover { text-decoration: underline; }
 
+/* = COMMENTS ========================= */
+#disqus_thread h3 { font-size: 1.5em; }
+
 /* = BOOKSHELF ======================== */
 ul#bookshelf {
    list-style: none;
