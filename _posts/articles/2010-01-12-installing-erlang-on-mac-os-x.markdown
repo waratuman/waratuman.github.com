@@ -30,15 +30,18 @@ First, launch the Terminal program found in `/Applications/Utilities`. The `PATH
 
 If you are using [Textmate](http://macromates.com/ "Textmate") you can use the following command. If you are not using Textmate, open the same file (`~/.profile`) in your editor of choice.
 
-    $ mate ~/.profile
+<script src="http://gist.github.com/278626.js?file=gistfile1.sh">
+</script>
 
 The following line needs to be added to the end of the file.
 
-    $ export PATH="/usr/local/bin:/usr/local/sbin:$PATH"
+<script src="http://gist.github.com/278626.js?file=gistfile2.sh">
+</script>
 
 After saving the file, return to Terminal and run the following command:
 
-    $ source ~/.profile
+<script src="http://gist.github.com/278626.js?file=gistfile3.sh">
+</script>
 
 ## Download
 
@@ -46,24 +49,18 @@ First we need a place that we can download and compile Erlang. Once the installa
 
 Make the folder:
 
-    $ mkdir ~/src && cd ~/src
+<script src="http://gist.github.com/278626.js?file=gistfile4.sh">
+</script>
 
 Download Erlang:
 
-    $ curl -O http://ftp.sunet.se/pub/lang/erlang/download/otp_src_R13B03.tar.gz
-    $ tar -xzf otp_src_R13B03.tar.gz
-    $ cd otp_src_R13B03
+<script src="http://gist.github.com/278626.js?file=gistfile5.sh">
+</script>
 
 ## Compile and Install
 
-    $ ./configure --prefix=/usr/local  \
-    $             --enable-kernel-poll \
-    $             --enable--threads    \
-    $             --enable-smp-support \
-    $             --enable-hipe        \
-    $             --enable-m64-build
-    $ make
-    $ sudo make install
+<script src="http://gist.github.com/278626.js?file=gistfile6.sh">
+</script>
 
 ## Run
 
@@ -85,5 +82,5 @@ To quit the prompt type:
 
 Now you can go ahead an remove the directory that we created at the start to hold the source code and compile it.
 
-    cd ~/
-    rm -rf ~/src
+<script src="http://gist.github.com/278626.js?file=gistfile7.sh">
+</script>
