@@ -1,0 +1,112 @@
+---
+title: Permuations and Combinations
+author: James R. Bracy
+category: articles
+layout: post
+tags:
+  - Erlang
+  - Probability
+extract: "<p>Permutations are key to probabilities. A permutation is simply arranging items in a given set S without regard to order. If we had a deck with 3 cards in it numbered from 1 to 3, a total of 6 permutations exists&hellip;</p>"
+---
+
+<p>Permutations are key to probabilities. A permutation is simply
+arranging items in a given set <code>S</code> without regard to
+order. If we had a deck with 3 cards in it numbered from 1 to 3, a
+total of 6 permutations exists: <code>[1,2,3]</code>,
+<code>[1,3,2]</code>, <code>[2,1,3]</code>, <code>[2,3,1]</code>,
+<code>[3,1,2]</code> and <code>[3,2,1]</code>.</p>
+ 
+<p>So with a general understanding of what a permutation is, the goal
+now is to develop a more abstract idea so that the number of
+permutations can be found quickly given <code>n</code> items.</p> 
+ 
+<p>If a deck has <code>n</code> cards in it, how many ways are there
+to remove all <code>n</code> cards? When drawing the first card there
+are <code>n</code> different possibilities of what that card would
+be. The second card that is drawn only has <code>(n-1)</code>
+possibilities. This continues until no cards are left. So the number
+of ways that all cards from the deck can be drawn is
+<code>(n)(n-1)(n-2)...(1)</code>. This is know as the factorial.</p>
+ 
+    <pre><code>(n)(n-1)(n-2)...(1) = n!</code></pre>
+ 
+<p>Now suppose that instead of only taking one item at a time, 2 items
+are taken at a time. With a deck of 4 cards numbered 1 to 4 this means
+that the permutations of way in which the cards can be drawn are:
+<code>[[1,2],[3,4]]</code>, <code>[[2,1],[3,4]]</code>,
+<code>[[1,2],[4,3]]</code>, <code>[[2,1],[4,3]]</code>,
+<code>[[1,3],[2,4]]</code>, <code>[[3,1],[2,4]]</code>,
+<code>[[1,3],[4,2]]</code>, <code>[[3,1],[4,2]]</code>,
+<code>[[1,4],[2,3]]</code>, <code>[[4,1],[2,3]]</code>,
+<code>[[1,4],[3,2]]</code>, and <code>[[4,1],[3,2]]</code>.</p>
+ 
+<p>So if there is a deck with <code>n</code> cards and <code>k</code>
+cards are drawn at a time, how many permutations are there? The
+solution takes the following form:</p>
+ 
+<pre><code># The number of permutations of n items taken k at a time.
+permutations(n,k) = n! / (n - k)!</code></pre> 
+ 
+<p>Notice that this is equivalent to:</p> 
+ 
+<pre><code>permutations(n,k) = (n)(n-1)...(n-k+1)</code></pre> 
+ 
+<p>This form of the solution will be much more efficienct when it come
+to implementing a function in Erlang because instead of calculating 2
+factorials and then dividing, it will only do a partial factorial.</p>
+ 
+<h2 id='combinations'>Combinations</h2>
+ 
+<p>Permutations and combinations are similar except that a combination
+are not concerned with order. A permutation has <code>k!</code>
+duplicate combinations, so the solution is to simply divide the number
+of permutations by <code>k!</code>.</p>
+ 
+<pre><code>combinations(n,k) = n! / (k! (n - k)!)
+                  = (n)(n-1)...(n-k+1) / k!</code></pre> 
+ 
+<p>This ends the description of permutations and combinations. I am
+sure that some things are not clear, as I am working though a book on
+probability and statistics and just trying to explain it so that I can
+better grasp the subject. If there are any questions or things that
+could be clearer, please leave a note in the comments section.</p>
+ 
+<h2 id='implementation_in_erlang'>Implementation in Erlang</h2> 
+ 
+<pre><code>%% waratuman_math.erl
+-module(waratuman_math).
+-export([factorial/1, partial_factorial/2]).
+ 
+factorial(N) -&gt;
+    partial_factorial(N, 1).
+ 
+ %% A generalization of factorial. Instead of multipling a number
+ %% n times all numbers down to 1 it is multiplied by all numbers
+ %% down to k, including k. Both n and k are postivie integers.
+ %% partial_factorial(N,K) -&gt; (N) * (N-1) * ... * (N-K).
+ partial_factorial(N, K) -&gt;
+     partial_factorial(N, K, 1).
+  
+ partial_factorial(N, K, Accumulator) when N &lt; K -&gt;
+     Accumulator;
+ partial_factorial(N, K, Accumulator) -&gt;
+     partial_factorial(N-1, K, N*Accumulator).</code></pre>
+ 
+<pre><code>%% waratuman_probability.erl
+-module(waratuman_probability).
+-import(waratuman_math, [factorial/1, partial_factorial/2]).
+-export([permutations/1, permutations/2, combinations/2]).
+    
+permutations(N) -&gt;
+    factorial(N).
+permutations(N, N) -&gt;
+    factorial(N);
+permutations(N, K) -&gt;
+    partial_factorial(N, N-K+1).
+ 
+combinations(N, N) -&gt;
+    1;
+combinations(N, K) when (N - K) &gt; K -&gt;
+    partial_factorial(N, N-K+1) / factorial(K);
+combinations(N, K) -&gt;
+    partial_factorial(N, K+1) / factorial(N-K).</code></pre>

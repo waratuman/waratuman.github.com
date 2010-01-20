@@ -51,36 +51,51 @@ Now the implementation in Erlang.
 
 The sample space is all of the cards, so in Erlang this can be represented as:
 
-<script src="http://gist.github.com/278643.js?file=gistfile1.hrl">
-</script>
+    gb_sets:from_list([{red, 1}, {red, 2}, {red, 3}, {red, 4}, {red, 5}, {red, 6},
+                       {red, 7}, {red, 8}, {red, 9}, {red, 10}, {red, 11}, {red, 12},
+                       {red, 13}, {red, 14}, {red, 15},
+                       {black, 1}, {black, 2}, {black, 3}, {black, 4}, {black, 5},
+                       {black, 6}, {black, 7}, {black, 8}, {black, 9}, {black, 10},
+                       {black, 11}, {black, 12}, {black, 13}, {black, 14}, {black, 15}]).
 
 The set *A* can be represented as:
 
-<script src="http://gist.github.com/278643.js?file=gistfile2.hrl">
-</script>
+    A = gb_sets:from_list([{red, 2}, {red, 4}, {red, 6}, {red, 8}, {red, 10}, {red, 12},
+                           {red, 14}, {black, 2}, {black, 4}, {black, 6}, {black, 8}, {black, 10},
+                           {black, 12}, {black, 14}]).
 
 The set *B* can be represented as:
 
-<script src="http://gist.github.com/278643.js?file=gistfile3.hrl">
-</script>
+    B = gb_sets:from_list([{black, 1}, {black, 2}, {black, 3}, {black, 4}, {black, 5},
+                           {black, 6}, {black, 7}, {black, 8}, {black, 9}, {black, 10},
+                           {black, 11}, {black, 12}, {black, 13}, {black, 14}, {black, 15}]).
 
 And the set *C* can be represented as:
 
-<script src="http://gist.github.com/278643.js?file=gistfile4.hrl">
-</script>
+    C = gb_sets:from_list([{red, 1}, {red, 2}, {red, 3}, {red, 4}, {red, 5},
+                           {black, 1}, {black, 2}, {black, 3}, {black, 4}, {black, 5}]).
 
 ## Answers
 
 After this point getting the answers is as simple as using the `intersection`, `subtract`, and `union` functions of the `gb_sets` library. The only trick is that the complement is the equivalent of a `subtract` from the sample space *S*.
 
-<script src="http://gist.github.com/278643.js?file=gistfile5.hrl">
-</script>
+    % 1:
+    gb_sets:intersection([A, B, C]).
+    
+    % 2:
+    gb_sets:intersection(B, gb_sets:subtract(S, C)).
+    
+    % 3:
+    gb_sets:union([A, B, C]).
+    
+    % 4:
+    gb_sets:intersection(A, gb_sets:union(B, C)).
+    
+    % 5:
+    gb_sets:subtract(S, gb_sets:intersection([A, B, C])).
 
 The last answer uses [De Morgan's laws](http://en.wikipedia.org/wiki/De_Morgan's_laws), specifically that (*A* &cup; *B*)<sup>c</sup> = *A*<sup>c</sup> &cap; *B*<sup>c</sup>.
 
-## Source
 
-The following can be executed from the Erlang shell (erl).
 
-<script src="http://gist.github.com/278643.js?file=gistfile6.hrl">
-</script>
+

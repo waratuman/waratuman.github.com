@@ -72,4 +72,43 @@ things that could be clearer, please leave a note in the comments section.
 
 ## Implementation in Erlang
 
-<script src="http://gist.github.com/281617.js"></script>
+    %% waratuman_math.erl
+    -module(waratuman_math).
+    -export([factorial/1, partial_factorial/2]).
+    
+    factorial(N) ->
+        partial_factorial(N, 1).
+    
+     %% A generalization of factorial. Instead of multipling a number
+     %% n times all numbers down to 1 it is multiplied by all numbers
+     %% down to k, including k. Both n and k are postivie integers.
+     %% partial_factorial(N,K) -> (N) * (N-1) * ... * (N-K).
+     partial_factorial(N, K) ->
+         partial_factorial(N, K, 1).
+      
+     partial_factorial(N, K, Accumulator) when N < K ->
+         Accumulator;
+     partial_factorial(N, K, Accumulator) ->
+         partial_factorial(N-1, K, N*Accumulator).
+
+
+
+
+    %% waratuman_probability.erl
+    -module(waratuman_probability).
+    -import(waratuman_math, [factorial/1, partial_factorial/2]).
+    -export([permutations/1, permutations/2, combinations/2]).
+        
+    permutations(N) ->
+        factorial(N).
+    permutations(N, N) ->
+        factorial(N);
+    permutations(N, K) ->
+        partial_factorial(N, N-K+1).
+    
+    combinations(N, N) ->
+        1;
+    combinations(N, K) when (N - K) > K ->
+        partial_factorial(N, N-K+1) / factorial(K);
+    combinations(N, K) ->
+        partial_factorial(N, K+1) / factorial(N-K).
