@@ -25,7 +25,7 @@ bend. It is unseen and unknown and can not be prepared for. This is
 where everything that you risked is on the line. Nothing is safe, not
 your personal life, not your social life, not your friendships, not
 your family. Everything that can go wrong will go wrong. The world
-will come within and inch of destruction. This is when it is
+will come within an inch of destruction. This is when it is
 impossible to keep your head.
 
 This previous weekend the biggest drop on the *emotional roller
