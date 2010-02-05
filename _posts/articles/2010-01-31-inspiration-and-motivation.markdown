@@ -1,5 +1,5 @@
 ---
-title: Insiration and Motivation
+title: Inspiration and Motivation
 author: James R. Bracy
 category: articles
 layout: post
