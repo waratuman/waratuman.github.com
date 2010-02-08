@@ -13,7 +13,7 @@ encourage someone to continue to push on through the difficulties and
 challenges of a task, nor does a figure in history. In much the same
 way the skilled engineer who does not interact or encourage others but
 give his attention only to his work can not help a discouraged person
-in time of need&hellip;"
+in time of need&hellip;</p>"
 ---
 
 Inspiration is a feeling to do something that comes from the person
