@@ -96,5 +96,5 @@ To quit the prompt type:
 
 Now you can go ahead an remove the directory that we created at the start to hold the source code and compile it.
 
-    cd ~/
-    rm -rf ~/src
+    $ cd ~/
+    $ rm -rf ~/src
