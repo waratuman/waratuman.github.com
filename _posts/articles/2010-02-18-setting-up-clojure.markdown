@@ -103,12 +103,13 @@ is just move the `.jar` file.
 
 ## Install `rlwrap`
 
- `rlwrap` will make interacting with the Clojure REPL much more
- friendly. It is not necessary but I recommend it. With `rlwrap` you
- will have tab completion, parenthesis matching, and much more. The
- easiest way to install `rlwrap` is with
- [MacPorts](http://www.macports.org/ "MacPorts"). Go ahead and install
- MacPorts if you don't have it installed.
+`rlwrap` will make interacting with the Clojure REPL much more
+friendly. It is not necessary but I recommend it. With `rlwrap` you
+will have tab completion, parenthesis matching, and much more. The
+easiest way to install `rlwrap` is with
+[MacPorts](http://www.macports.org/ "MacPorts"). Go ahead and install
+MacPorts if you don't have it installed. (The brave will install this
+from source.)
 
     $ sudo port install rlwrap
 
@@ -157,7 +158,6 @@ Copy the following text into the file:
     if [ $# -eq 0 ]
     then
       exec rlwrap --remember -c -b $BREAK_CHARS \
-              -f "$HOME"/.clj_completions \
               java -cp $CLASSPATH clojure.main
     else
       exec java -cp $CLASSPATH clojure.main $1 -- "$@"
