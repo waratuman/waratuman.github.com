@@ -9,7 +9,11 @@ tags:
   - Java
   - State Machine
   - ISO8601
-extract: ""
+extract: "<p>A state machine is a perfect way to parse dates that are represented
+as strings. Ragel is a state machine compiler that can interface with
+a varity of lanuages. Using a tool like Ragel is far better than using
+a typical regular expression in terms of both speed and handling
+actions.</p>"
 ---
 
 A state machine is a perfect way to parse dates that are represented
