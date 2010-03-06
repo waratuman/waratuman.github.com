@@ -3,8 +3,10 @@ title: Internal and External Motivation
 author: James R. Bracy
 category: articles
 layout: post
-extract: "<p>
-          </p>
+extract: "<p>California recently cut educational funding. Students rose up
+         protesting higher student fees and smaller class offerings. Every one
+         of those students is likely driven by external motivation rather than
+         internal motivation.</p>
 ---
 
 California recently cut educational funding. Students rose up
