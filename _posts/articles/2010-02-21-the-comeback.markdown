@@ -4,7 +4,7 @@ author: James R. Bracy
 category: articles
 layout: post
 extract: "<p>\"It's not how you start, it's how you finish.\" These words come from
-the song *Ali in the Jungle* by The Hours. The finish differentiates those
+the song <em>Ali in the Jungle</em> by The Hours. The finish differentiates those
 who have overcome the obstacles from those who have not overcome
 obstacles. The finish sums up the greatest moments of the
 race. Between the start and the end is where misfortune befalls the
