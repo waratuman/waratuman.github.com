@@ -1,0 +1,11 @@
+---
+title: Realizing that Computer Science is Not Enough
+author: James R. Bracy
+layout: post
+---
+
+Computer Science is a field which has no meaning or purpose outside itself without applying the theory from other fields. This realization has taken years to come to my mind, but is perhaps the most valuable insight that someone in the realm of Computer Science can understand. The most valuable software products are those that solve real world problems by applying the theory from other fields, such as accounting software, word processing applications, and engineering design programs.
+
+At FlightCaster a product is given that solves a real problem for the travel industry by applying theory from the realm of statistics and machine learning. Previous start-ups that I have worked on focused on creating a value for the user even though a real problem was not present. OpenVote was one of these startups, it was an application that allowed users to create polls which friends would then vote on. The hypothesis was that people were not being heard and that a place where everyone could vote on polls would help solve this problem. The first problem of OpenVote was that the problem being solved was not a pain point for a majority of people, the second was that anyone could make such and application. The difference between FlightCaster and OpenVote is that FlightCaster applies knowledge from others fields to solve a painful problem while OpenVote merely scratched an itch and failed to understand how other fields of knowledge could have affected the end product. Not many people can make FlightCaster, but every computer scientist could create another OpenVote.
+
+So given this insight, should a computer scientist really be spending time learning yet another language? Instead spend time in another field of interest. Then the two skills can be used together to create a specialized product that solves specific problems. A statistician may know how to solve the problem and the programmer how to implement algorithms, but it is a person with the knowledge of both who provides a complete solution by implementing the theory.

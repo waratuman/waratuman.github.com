@@ -1,0 +1,32 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html lang="en" xml:lang='en' xmlns='http://www.w3.org/1999/xhtml'>
+	<head>
+		<title>{{ site.title }} | {{ page.title }}</title>
+	    <link charset='utf-8' href='/resources/stylesheets/reset.css' media='screen' rel='stylesheet' type='text/css' />
+    	<link charset='utf-8' href='/resources/stylesheets/text.css' media='screen' rel='stylesheet' type='text/css' />
+	    <link charset='utf-8' href='/resources/stylesheets/application.css' media='screen' rel='stylesheet' type='text/css' />
+    	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	</head>
+
+	<body>
+		<div id='header'> 
+			<img src="https://secure.gravatar.com/avatar/07949fed3b1168425027bb9423c665ff?s=20.png"
+				 alt="avatar" width="20" height="20"/>
+			<h1><a href="/">{{ site.title }}</a></h1>
+			
+	    </div>
+
+		<div id='container'>
+			{{ content }}
+		</div>
+		
+		<div id='footer'>
+			<a href="/posts.html">All Posts</a> | 
+			Copyright &copy; 2009 James R. Bracy
+		</div>
+		
+	</body>
+  	
+</html>

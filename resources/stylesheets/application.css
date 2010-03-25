@@ -1,229 +1,56 @@
+
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	background:#fbfbfb;
+	color:#080000; }
+a {
+	color: #004080; }
+
 #header {
-  background: #082567;
-  color: #FFF;
-  height: 28px;
-	margin-bottom: 20px; }
-
-	#header-container {
-		width: 960px;
-	  margin-right: auto;
-	  margin-left: auto;
-	  padding: 5px 0px; }
-
-		#header-container h1 {
-			font-size: 13px;
-		  font-weight: normal;
-		  display: inline;
-			float: left; }
-
-			#header-container h1 a {
-				color: #FFF;
-			  text-decoration: none; }
-
-ul#header-links, ul#left-header-links {
-	font-size: 10px;
-	margin: 3px 0 0 0;
-	padding: 0;
-	white-space: nowrap;
-}
-
-ul#header-links {
-	float: right;
-}
-
-ul#left-header-links {
-	float: left;
-	margin-left: 108px;
-}
-
-ul#header-links li, ul#left-header-links li {
-	margin: 0;
-	padding: 0;
-	display: inline;
-	list-style: none;	
-}
-
-ul#header-links li a, ul#left-header-links li a {
-	padding: 3px 10px 7px 10px;
-	color: #FFF;
-	text-decoration: none;
-}
-
-ul#header-links li a:hover, ul#left-header-links li a:hover {
-	color: #082567;
-	background: #FFF;
-}
-
-ul#header-links li a.active, ul#left-header-links li a.active {
-	color: #082567;
-	background: #FFF;
-}
-
+	line-height:1.4em;
+	max-width:770px;
+	margin:1em auto; }
+#header a {
+	text-decoration:none; }
+#header a:hover {
+	text-decoration:underline; }
+#header img {
+	float:right;
+	clear:both;
+	margin: 0 0px 12px 0; }
+#header h1 {
+	display:block;
+	width:100%;
+	border-bottom:1px solid #333;
+	padding-bottom:.5em;
+	margin-bottom:.75em;
+	font-size: 1.4em; }
+	
+#footer {
+	display:block;
+	line-height:1.4em;
+	max-width:770px;
+	margin:1em auto;
+	padding-top: .5em;
+	border-top:1px solid #333;
+	text-align:center;
+	clear:both;
+	overflow:hidden; }
+	
 #container {
-  width: 960px;
-  margin-right: auto;
-  margin-left: auto; }
+	line-height:1.4em;
+	max-width:770px;
+	margin:1em auto; }
+.post h1 {
+	}
 
-#navigation-container {
-	width: 140px;
-  margin-right: 10px;
-  float: left;
+.navigation {
 }
-
-.navigation {	margin-bottom: 15px; }
-	.navigation-title { font-weight: bold; }
-	.navigation-title a { text-decoration: none; color: inherit;}
-  .navigation ul {
-    margin: 0;
-    padding: 0;
-    width: 140px; }
-    .navigation ul li {
-      width: 100%; }
-      .navigation ul li a {
-        display: block;
-        text-decoration: none;
-        color: inherit;
-        background: #FFF;
-        padding: 0 5px; }
-      .navigation ul li a:hover {
-        background: #D3D3D3; }
-      .navigation ul li a.current {
-        color: #FFF;
-        background: #082567; }
-
-#content {
-  float: right;
-  width: 780px;
-  margin-right: auto;
-  margin-left: auto; }
-
-/* LOGIN FORM ********************/
-.login-form-container h2 { width: 300px; margin: 0px auto; }
-form.login-form { width: 300px; margin: 0 auto; padding: 10px; background: #EFEFEF; border: 2px solid #696969; } 
-.login-form .row { clear: both; width: 300px; }
-.login-form .row span.label { float: left; width: 80px; text-align: right; }
-.login-form .row span.field { float: left; width: 220px; text-align: left; }
-.login-form .row .remember-me { float: right; }
-.login-form .row .signup-link { float: left; }
-.login-form .row.submit { padding-top: 20px; text-align: right; }
-
-/* NOTICE / WARNING / ERROR ************/
-
-#notice, #warning, #error {
-	padding: 10px;
-	margin-bottom: 10px;
-}
-#notice { background: #99FF9E; border: 2px solid #05B20C; }
-#warning { background: #FFEF99; border: 2px solid #FFD80D; }
-#error { background: #FFA99B; border: 2px solid #FF300E; }
-
-table {
-  width: 100%;
-  clear: both; }
-  table tr.link {
-    cursor: pointer; }
-  table td {
-    padding: 0 10px; }
-  table thead {
-    background: #082567;
-    color: #FFF; }
-  table.highlight-row tbody tr:hover {
-    background: #D3D3D3; }
-
-.clear { clear: both; }
-
-.right { float: right; }
-.left { float: left; }
-
-/* = PAGINATION ============================================================== */
-.pagination {
-  float: right; }
-  .pagination a {
-    text-decoration: none;
-    color: inherit;
-    background: #FFF;
-    padding: 0 5px; }
-  .pagination a:hover {
-    background: #D3D3D3; }
-  .pagination .current {
-    text-decoration: none;
-    color: #FFF;
-    background: #082567;
-    padding: 0 5px; }
-
-/* = STATUS ================================================================== */
-table.status tr.failed {
-  color: #800000; }
 
 .code {
-  font-family: monospace; }
-
-dt {
-  float: left;
-  clear: left;
-  font-weight: bold; }
-
-dt:after {
-  content: ":"; }
-
-dd {
- float: left;
- margin-left: 10px; }
-
-table.http-requests {
-	overflow: hidden;
-	white-space: nowrap;
-}
-
-table.http-requests td.url-column {
-	overflow: hidden;
-	max-width: 559px;
-}
-
-ul.status li.green { list-style-image: url(/images/api/green.png); }
-ul.status li.yellow { list-style-image: url(/images/api/yellow.png); }
-ul.status li.red { list-style-image: url(/images/api/red.png); }
-ul.status li.grey { list-style-image: url(/images/api/grey.png); }
-
-/* = CODE BLOCKS ====================== */
-pre { padding: 10px; border: 1px solid gray; background: #F3F3F3; overflow: auto; }
-
-/* = QUOTES =========================== */
-blockquote { padding: 1em; font-style: italic; }
-
-/* = ARTICLE ========================== */
-.article { margin-bottom: 2em; }
-.article h2 a { text-decoration: none; color: inherit; }
-.article h2 a:hover { text-decoration: underline; }
-
-/* = COMMENTS ========================= */
-#disqus_thread h3 { font-size: 1.5em; }
-
-/* = BOOKSHELF ======================== */
-ul#bookshelf {
-   list-style: none;
-}
-
-ul#bookshelf li {
-   clear: both;
-}
-
-ul#bookshelf li h2 {
-   font-size: 1.2em;
-   margin: 0;
-}
-
-ul#bookshelf li .author { 
-   margin-bottom: 20px;
-   color: #777;
-}
-ul#bookshelf li h3 { font-size: 1em; }
-
-ul#bookshelf img.cover {
-   float: left;
-   margin: 0 10px 0 0;
-}
-
-ul#bookshelf .description {
-   margin-left: 186px;
-}
+	font-family: monospace; }
+pre {
+	background-color: #f6f6f6;
+	padding: 10px;
+	border: 1px solid gray;
+	overflow: auto; }
