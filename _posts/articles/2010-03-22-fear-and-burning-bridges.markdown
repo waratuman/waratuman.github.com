@@ -17,7 +17,7 @@ weary.
 
 Failure is good. Constant failure is bad. Failures result from taking
 steps outside of the known and comfortable. Failure is even expected,
-no person is perfect and perfection is not expected. Understanding the
+no person is perfect. Understanding the
 reason for failure and recovering is expected. Consistent failure
 points out a deep flaw that needs addressing. Fear not failure and
 instead look forward to the chance to grow. 
