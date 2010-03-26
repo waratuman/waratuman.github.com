@@ -22,14 +22,17 @@ Before starting be sure that the Xcode Tools have been installed. They
 can either be installed from the OS X installation disc or found
 [here](http://developer.apple.com/tools/xcode/).
 
-## Set the PATH
+## Set the `PATH`
 
 First, launch the Terminal program found in
 `/Applications/Utilities`. The `PATH` tells the Terminal where to find
 the applications that are about to be installed.
 
 <blockquote cite="http://hivelogic.com/articles/compiling-ruby-rubygems-and-rails-on-snow-leopard/">
-<p>The PATH variable determines where your system searches for command-line programs. You’ll need to set it so that it can find the new apps you’re about to install.</p><p>&ndash; <cite>Dan Benjamin</cite></p></blockquote>
+<p>The PATH variable determines where your system searches for
+command-line programs. You’ll need to set it so that it can find the
+new apps you’re about to install.</p><p>&ndash; <cite>Dan
+Benjamin</cite></p></blockquote> 
 
 If you are using [Textmate](http://macromates.com/ "Textmate") you can
 use the following command. If you are not using Textmate, open the
@@ -47,7 +50,8 @@ After saving the file, return to Terminal and run the following command:
 
 ## Download
 
-First we need a place that we can download and compile Erlang. Once the installation is complete the folder can be deleted.
+First we need a place that we can download and compile Erlang. Once
+the installation is complete the folder can be deleted.
 
 Make the folder:
 
@@ -72,7 +76,8 @@ Download Erlang:
 
 ## Run
 
-You should now be able to run and compile Erlang programs. Try the following to ensure that everything is working:
+You should now be able to run and compile Erlang programs. Try the
+following to ensure that everything is working:
 
     $ erl
     Erlang R13B03 (erts-5.7.4) [source] [smp:2:2] [rq:2] [async-threads:0] [kernel-poll:false]
@@ -80,15 +85,17 @@ You should now be able to run and compile Erlang programs. Try the following to 
     Eshell V5.7.4  (abort with ^G)
     1> 
 
-A prompt should appear telling you that you are in the Eshell. If everything worked, then the installed worked.
+A prompt should appear telling you that you are in the Eshell. If
+everything worked, then the installed worked.
 
 To quit the prompt type:
 
     1>q().
 
-## Clean up
+## Clean Up
 
-Now you can go ahead an remove the directory that we created at the start to hold the source code and compile it.
+Now you can go ahead an remove the directory that we created at the
+start to hold the source code and compile it. 
 
     $ cd ~/
     $ rm -rf ~/src
