@@ -14,6 +14,7 @@ The following instructions are for installing RabbitMQ on Mac OS X
 
 Before starting be sure that the Xcode Tools have been installed and
 that Erlang is installed. If it is not, this
+
 [post](/installing-erlang-on-mac-os-x.html) will take you through the 
 necessary steps to get it installed.
 

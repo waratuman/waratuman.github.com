@@ -1,0 +1,124 @@
+---
+title: A Tangent into Ada
+author: James R. Bracy
+layout: post
+tags:
+  - Ada
+  - gnat
+  - Arch Linux
+---
+
+The following instructions are for installing and programming `Ada` on Arch Linux.
+
+## Prerequisites
+
+Install the `Ada` compiler `GNAT` with the following command:
+
+    $ pacman -S gcc-ada
+
+After `pacman` has finished the install the `gnat` command will be available to compile `Ada` programs.
+
+## Hello, World!
+
+The first thing to do in any new language is the classic "Hello, World!" program. This will introduce us to the feel of `Ada` and give us an idea of what we can expect.
+
+Lets get started. First we will create a new directory for this program.
+
+    $ mkdir ~/src/hello_world
+    $ cd ~/src/hello_world
+
+Now get started writing the program in a new file called `hello_world.adb`.
+
+    with Ada.Text_IO;
+    
+    procedure Hello_World is
+    begin
+       Ada.Text_IO.Put_Line("Hello, World!");
+    end Hello_World;
+
+Compile and run:
+
+    $ gnat make hello_world.adb
+    $ ./hello_world
+    Hello, World!
+
+Great, we finsihed our first Ada program! Next up is the first problem from [Project Euler](http://projecteuler.net/).
+
+<blockquote><p>Find the sum of all the multiples of 3 or 5 below 1000.</p></blockquote>
+
+
+Open a new file called `euler1.adb` and type the following text inside:
+
+    with Ada.Integer_Text_IO;
+    
+    procedure Euler1 is
+        package IO renames Ada.Integer_Text_IO;
+        Sum : Integer;
+    begin
+
+	Sum := 0;
+	
+	for I in Integer range 1..999 loop
+	    if I mod 3 = 0 then
+	       Sum := Sum + I;
+	    elsif I mod 5 = 0 then
+	       Sum := Sum + I;
+	    end if;
+	end loop;
+	
+	IO.Put(Sum); 
+    end Euler1;
+
+Again, compile and run:
+
+    $ gnat make euler1.adb
+    $ ./euler1
+         233168
+
+Great! 233168 is the correct answer. Now on to problem number 2! This problem is a little harder, but it is still just counting numbers.
+
+<blockquote><p>Find the sum of all the even-valued terms in the Fibonacci sequence which do not exceed four million.</p></blockquote>
+
+Start another file titled `euler2.adb` and type the following text:
+
+    with Ada.Integer_Text_IO;
+    use Ada;
+    
+    procedure Euler2 is
+    
+        Fib1 : Natural;
+        Fib2 : Natural;
+        Sum : Natural;
+   
+    begin
+        Sum := 0;
+        Fib1 := 1;
+        Fib2 := 2;
+   
+        while Fib1 < 4_000_000 and Fib2 < 4_000_000 loop
+      	
+            if Fib1 > Fib2 then
+                if Fib1 mod 2 = 0 then
+                    Sum := Sum + Fib1;
+                end if;
+                Fib2 := Fib1 + Fib2;
+            else
+                if Fib2 mod 2 = 0 then
+                    Sum := Sum + Fib2;
+                end if;
+                Fib1 := Fib1 + Fib2;
+            end if;
+        end loop;
+	
+        Integer_Text_IO.Put(Sum);
+   
+    end Euler2;
+
+Compile and run to get the result:
+
+    $ gnat make euler2.adb
+    $ ./euler2
+        4613732
+
+And this concludes the short tangent into `Ada`. The compile is up and running and we are solving some problems. Go ahead and do a few more at [Project Euler](http://projecteuler.net/).
+
