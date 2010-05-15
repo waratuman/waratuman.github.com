@@ -122,3 +122,51 @@ Compile and run to get the result:
 
 And this concludes the short tangent into `Ada`. The compile is up and running and we are solving some problems. Go ahead and do a few more at [Project Euler](http://projecteuler.net/).
 
+## Update
+
+Problem number 2 of [Project Euler](http://projecteuler.net/) actually has a more efficient solution.
+
+The Fibonacci sequence actually has even integers every third number.
+
+    Fibonacci   1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144, 233, 377, 610...
+    Even / Odd  O, O, E, O, O, E,  O,  O,  E,  O,  O,   E,   O,   O,   E...
+    
+
+With this knowlege, the only calculations that need to be done are for every third number in the sequence. The sequence in terms of `x` and `y` is:
+
+    x, y, x + y, x + 2y, 2x + 3y, 3x + 5y...
+
+Now for the source text:
+
+    with Ada.Integer_Text_IO;
+    use Ada;
+
+    procedure Euler2 is
+
+        X : Natural;
+        Y : Natural;
+        Sum : Natural;
+        Old_X : Natural;
+
+    begin
+   
+        Sum := 0;
+        X := 1;
+        Y := 1;
+        
+        while Y < 4_000_000 loop
+            Sum := Sum + X + Y;
+            Old_X := X;
+            X := X + 2 * Y;
+            Y := 2 * Old_X + 3 * Y;
+        end loop;
+    
+        Integer_Text_IO.Put(Sum);
+    
+    end Euler2;
+
+Compile and run. The result should be the same.
+
+    $ gnat make euler2.adb
+    $ ./euler2
+        4613732
