@@ -56,17 +56,17 @@ Open a new file called `euler1.adb` and type the following text inside:
         Sum : Integer;
     begin
 
-	Sum := 0;
+	      Sum := 0;
+	  
+	      for I in Integer range 1..999 loop
+	          if I mod 3 = 0 then
+	              Sum := Sum + I;
+	          elsif I mod 5 = 0 then
+	              Sum := Sum + I;
+	          end if;
+	      end loop;
 	
-	for I in Integer range 1..999 loop
-	    if I mod 3 = 0 then
-	       Sum := Sum + I;
-	    elsif I mod 5 = 0 then
-	       Sum := Sum + I;
-	    end if;
-	end loop;
-	
-	IO.Put(Sum); 
+	      IO.Put(Sum); 
     end Euler1;
 
 Again, compile and run:
