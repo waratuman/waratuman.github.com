@@ -14,7 +14,7 @@ straightforward when it came to the implementation. The third problem was a
 little more complicated because the solution that I choose to implement
 required the use of a vector as I did not know the number of elements that
 would need stored in an array before run-time. As it turns out this was
-more difficult than I had imagined because Google either failed to turn up an
+more difficult than I had imagined because Google either failed to turn up any
 results for 'vector ada example' that gave an example of how to actually use
 them. So this post will remedy that and give the internet at least one example
 of how to use vectors in Ada.
