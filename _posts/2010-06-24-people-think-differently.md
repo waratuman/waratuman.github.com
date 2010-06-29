@@ -1,4 +1,8 @@
-# People Think Differently
+---
+title: People Think Differently
+author: James R. Bracy
+layout: post
+---
 
 The other day I noticed a difference in the way someone else thought in
 comparison to how I thought. People frequently spout the cliche,"people think
