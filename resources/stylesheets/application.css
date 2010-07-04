@@ -54,3 +54,21 @@ pre {
 blockquote {
 	margin-left:3em;
 	margin-right:3em; }
+	
+table {
+  border: 1px solid #666;
+  border-collapse: collapse;
+}
+table thead {
+  border-bottom: 1px solid #666;
+}
+table tr {
+  border-left: 1px solid #666;
+  border-right: 1px solid #666;
+}
+table td, table th {
+  padding: 0.2em 1em;
+}
+table tr td:first-child {
+  border-left: 1px solid #666;
+}
