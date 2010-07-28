@@ -11,13 +11,13 @@ tags:
 ---
 
 A state machine is a perfect way to parse dates that are represented
-as strings. Ragel is a state machine compiler that can interface with
+as strings. [Ragel](http://www.complang.org/ragel/) is a state machine compiler that can interface with
 a varity of lanuages. Using a tool like Ragel is far better than using
 a typical regular expression in terms of both speed and handling
 actions.
 
 For this exercise we will write a parser for several of the date
-formats specified in the ISO8061 standard. To keep the scope of this
+formats specified in the [ISO8061](http://en.wikipedia.org/wiki/ISO_8601) standard. To keep the scope of this
 project within reach the first phase is to parse all of the following
 formats:
 
@@ -48,9 +48,9 @@ portions are optional.
 
 For this project the interface language for Ragel is going to be Java
 (not my first choice, but we have to do it), with the ultimate goal of
-using the parser from Clojure. So lets go ahead and get started.
+using the parser from [Clojure](http://clojure.org/). So lets go ahead and get started.
 
-Leiningen is the favored build tool for Clojure at the moment. So
+[Leiningen](http://github.com/technomancy/leiningen) is the favored build tool for Clojure at the moment. So
 start a new project with `lein` (the Leiningen executable).
 
 Create the directory for the project.
