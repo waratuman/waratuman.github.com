@@ -6,7 +6,7 @@ layout: post
 
 Many companies let you run funnel analysis on a website, and they do a great
 job at it. I, however, don't want to wait for the numbers. The downside of
-using these service (Google Analytics, KISSmetrics, Mixpanel) is that results
+using these service ([Google Analytics](http://www.google.com/analytics/), [KISSmetrics](http://www.google.com/analytics/), [Mixpanel](http://mixpanel.com/)) is that results
 come in hours or days later. This is simply because that data doesn't get
 collected until you set the system up to collect data. Then some time must
 pass before you gather a large enough sample. How about this, collect all the
