@@ -233,4 +233,4 @@ are feeling like having a 'buzzword' compliant stack, stick a web front end on
 and put it on [Heroku](http://heroku.com).
 
 Take note that this code is just meant as a learning exercise. The code is
-horrible and you probably don't want to use it in production.
+horrible and you probably don't want to use it.
