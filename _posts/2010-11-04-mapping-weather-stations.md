@@ -59,4 +59,4 @@ zoom level 18 without a problem, but for now I'm happy with 11.
 At some point I hope to do more with the weather data provide and do some
 visualizations with it. But for a weekend project, this is hard to beat.
 
-Click [here](http://tiles.heroku.com) to see the final map!
+<!-- Click [here](http://tiles.heroku.com) to see the final map! -->
