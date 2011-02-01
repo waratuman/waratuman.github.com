@@ -7,7 +7,7 @@ layout: post
 Recently I have begun to work on a code base that has been around for 2 years
 and has had hundreds of people involved in its development. A common complaint,
 and I make it to, is that the code is of poor quality. Many of the engineers
-are young and most come straight from college. Many of them even are great
+are young and most come straight from college. Many of them are even great
 engineers. School does not teach good coding habits though, but everyone knows
 bad code when they see it. So what are some of the characteristics of code that
 make it bad?
@@ -17,7 +17,7 @@ common term for this is spaghetti code. This kind of code has functions that
 are over 20 lines long (I'm talking PHP, Java, Ruby, Objective-C here). When
 this happens, a function is trying to do more than what is sole purpose is.
 One function can do the job of three, but when you go in to modify the code it
-is much harder to hold the whole function in your brain. The key is small, 
+is much harder to hold the whole function in your mind. The key is small, 
 manageable pieces of code.
 
 The second is readability. It should be easy to understand what a piece of
