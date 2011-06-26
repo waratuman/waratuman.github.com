@@ -87,17 +87,21 @@ h1 { font-size: 27px; }
 h2 { font-size: 24px; }
 h3 { font-size: 20px; }
 h4 { font-size: 18px; }
+.clear { clear: both; }
 
 #container { width: 720px; margin: auto; }
 #header { border-bottom: 1px solid #777; padding: 0.5em 0; }
 #header a { font-size: 18px; color: #0E51A7; text-decoration: none; }
 #header a:hover { text-decoration: underline; }
 
-#content { padding-top: 1em; font-size: 18px; line-height: 27px; }
+#content { font-size: 18px; line-height: 27px; }
 #content h1 { margin-bottom: 1em; }
-#content p { margin-bottom: 1em; }
+#content p { margin: 1em 0; }
 #content a { text-decoration: none; }
 #content a:hover { text-decoration: underline; }
+#content h1, #content h2, #content h3, #content h4, #content h5, #content h6 {
+  margin: 1em 0;
+}
 #navigation { margin-top: 2em; }
 #navigation .previous { float: left; }
 #navigation .next { float: right; }
@@ -108,6 +112,36 @@ h4 { font-size: 18px; }
 
 #about { margin: 2em auto 3em auto; width: 364px; }
 #posts li { margin: 1em 0; }
+
+.code { font-family: monospace; }
+pre {
+  background-color: #f6f6f6;
+  padding: 10px;
+  border: 1px solid gray;
+  overflow: auto; 
+  font-size: 13px; }
+blockquote {
+  margin-left:3em;
+  margin-right:3em; }
+
+table {
+  border: 1px solid #666;
+  border-collapse: collapse;
+}
+table thead {
+  border-bottom: 1px solid #666;
+}
+table tr {
+  border-left: 1px solid #666;
+  border-right: 1px solid #666;
+}
+table td, table th {
+  padding: 0.2em 1em;
+}
+table tr td:first-child {
+  border-left: 1px solid #666;
+}
+
 
 .ir { display: block; text-indent: -999em; overflow: hidden; background-repeat: no-repeat; text-align: left; direction: ltr; }
 .hidden { display: none; visibility: hidden; }
