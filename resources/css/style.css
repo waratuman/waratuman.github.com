@@ -119,7 +119,8 @@ pre {
   padding: 10px;
   border: 1px solid gray;
   overflow: auto; 
-  font-size: 13px; }
+  font-size: 13px; 
+  line-height: 13px; }
 blockquote {
   margin-left:3em;
   margin-right:3em; }
