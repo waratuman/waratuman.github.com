@@ -4,22 +4,21 @@ title: home
 ---
 
 {% for post in paginator.posts %}
-<div class="post">
-	<h1>{{ post.title }}</h1>
-	
-	{{ post.content }}
-</div>
+  <div class="post">
+    <h1>{{ post.title }}</h1>
+    {{ post.content }}
+  </div>
 {% endfor %}
 
 
 <div id="navigation">
-	{% if paginator.page != paginator.total_pages %}
-		<a href="/page{{ paginator.next_page }}/">Previous</a>
-	{% endif %}
-	
-	{% if paginator.previous_page == 1 %}
-		<a href="/">Next</a>
-	{% elsif paginator.page != 1 %}
-		<a href="/page{{ paginator.previous_page }}/">Next</a>
-	{% endif %}
+  {% if paginator.previous_page == 1 %}
+    <a class="next" href="/">Next</a>
+  {% elsif paginator.page != 1 %}
+    <a class="next" href="/page{{ paginator.previous_page }}/">Next</a>
+  {% endif %}
+  {% if paginator.page != paginator.total_pages %}
+    <a class="previous" href="/page{{ paginator.next_page }}/">Previous</a>
+  {% endif %}
+  <div class="clear"></div>
 </div>
