@@ -27,7 +27,7 @@ for attention.
 
 The world unfortunately works against me going into a state of deep focus. The time must be set aside.
 I find it is best to escape without anyone knowing where or for how long I will be gone. Perhaps it
-adds to the sense of "escape" from the world to concentrate on my own thoughts. Some of the greatest
+adds to the sense of &#8220;escape&#8221; from the world to concentrate on my own thoughts. Some of the greatest
 locations are the library and a coffee shop (depending on the depth of thinking, the coffee shop may
 not do).
 

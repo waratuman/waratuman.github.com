@@ -5,16 +5,16 @@ layout: post
 ---
 
 Recently I had a conversation with a friend who mentioned the influential people
-of the world were simply *"living life."* I do not see this as true. *"Living
-life"* brings to mind someone who is just living with what life throws at them.
+of the world were simply *&#8220;living life.&#8221;* I do not see this as true. *&#8220;Living
+life&#8221;* brings to mind someone who is just living with what life throws at them.
 The influential people of the world do not live with what is given them. Many
 entrepreneurs are creating value, not working at a job living off value
 created by someone else.
 
-How is it possible for someone to end up with the idea of *"living life."* I
+How is it possible for someone to end up with the idea of *&#8220;living life.&#8221;* I
 think this can easily happen when you start to compare yourself with others.  
 Many people in the world are not as fortunate to be where we are. So it is
-easy to look at them and say that "I am happy with where I am." So, with
+easy to look at them and say that &#8220;I am happy with where I am.&#8221; So, with
 relative success behind, you can *live life*.
 
 This state of mind leads to the loss of a desire to create value. Being

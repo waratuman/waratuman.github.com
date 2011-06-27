@@ -9,13 +9,13 @@ will now start applying what he has learned. The college education is the great
 dream and many complete it. To me, completing college is a dream which I woke
 up in the middle of.
 
-If you asked me about getting my degree a few years ago I would have said "yes,
-I'm sure of it." Graduation was the goal. Instead of graduating though,  I
+If you asked me about getting my degree a few years ago I would have said &#8220;yes,
+I'm sure of it.&#8221; Graduation was the goal. Instead of graduating though,  I
 dropped out to move to Silicon Valley.
 
 Moving to Silicon Valley was the best experience of my college years.
-Education isn't just about knowledge. Herbert Spencer stated that "the great
-aim of education is not knowledge but action." Moving from simply learning to
+Education isn't just about knowledge. Herbert Spencer stated that &#8220;the great
+aim of education is not knowledge but action.&#8221; Moving from simply learning to
 doing is a big step. For a typical college person this happens after he or
 she graduates. Others take this step before graduation. The goal is not a
 piece of paper, it is the chance to apply knowledge.

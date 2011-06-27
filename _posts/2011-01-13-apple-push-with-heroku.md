@@ -8,8 +8,8 @@ Most people think they can't deliver push notifications to [iOS](http://www.appl
 [Heroku](http://www.heroku.com) because there is no obvious way to maintain maintain a persistent
 connection. I started by looking at [Urban Airship](http://urbanairship.com/)
 and other push services, but decided to see how far I could get with Heroku.
-You will find that Heroku takes the cake and steals the "easy-to-use push
-notification" tag line from Urban Airship.
+You will find that Heroku takes the cake and steals the &#8220;easy-to-use push
+notification&#8221; tag line from Urban Airship.
 
 In my case I used the [APN on Rails](https://github.com/PRX/apn_on_rails) gem
 in combination with [Resque](https://github.com/defunkt/resque). Here is a quick
