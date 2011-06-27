@@ -15,11 +15,11 @@ Use of Knowledge in Society](http://econlib.org/library/Essays/hykKnw1.html) by
 [Friedrich Hayek](http://en.wikipedia.org/wiki/Friedrich_Hayek) a few days ago.
 
 A logical answer might be how to make best use of available means to bring
-economic prosperity. To answer this we have to "possess all relevant
-information," "start out from a given system of preferences," and "command
-complete knowledge of available means." This reveals and even more fundamental
-problem in economics, "the problem of utilization of knowledge which is not
-given to anyone in its totality."
+economic prosperity. To answer this we have to &#8220;possess all relevant
+information,&#8221; &#8220;start out from a given system of preferences,&#8221; and &#8220;command
+complete knowledge of available means.&#8221; This reveals and even more fundamental
+problem in economics, &#8220;the problem of utilization of knowledge which is not
+given to anyone in its totality.&#8221;
 
 How is planning to be done so that the economy operate efficiently?
 Should it be done by a central authority? Should it be divided among
@@ -30,8 +30,8 @@ Hayek points out that the answer to this question will depend on a what kind
 of knowledge is given the greatest importance. Scientific knowledge is given
 high value, especially today. With this knowledge it makes sense that a
 chosen expert or set of experts may be the best to carryout the planning. But
-what of the "knowledge of general rules: the knowledge of the particular
-circumstances of time and place." Given this, every individual possesses some
+what of the &#8220;knowledge of general rules: the knowledge of the particular
+circumstances of time and place.&#8221; Given this, every individual possesses some
 information which can be used to his benefit. Take for example a real estate
 agent who makes his living off temporary opportunities, he may know of certain
 high quality leases that will be ending that others do not know.
@@ -66,10 +66,10 @@ individual.
 >  inducements which will make the individuals do the desirable things without
 >  anyone having to tell them what to do.
 >  
->  \- Hayek
+>  &#8211; Hayek
 
-This is the heart of economics: "the problem of utilization of knowledge which
-is not given to anyone in its totality." The graphs in Economics 101 made for
-some pretty pictures, but which Hayek points out, "in effect starts from the
+This is the heart of economics: &#8220;the problem of utilization of knowledge which
+is not given to anyone in its totality.&#8221; The graphs in Economics 101 made for
+some pretty pictures, but which Hayek points out, &#8220;in effect starts from the
 assumption that people's knowledge corresponds with objective facts of the
-situation, systematically leaves out what is our main task to explain."
+situation, systematically leaves out what is our main task to explain.&#8221;
