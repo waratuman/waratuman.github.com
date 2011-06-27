@@ -21,7 +21,7 @@ complete knowledge of available means." This reveals and even more fundamental
 problem in economics, "the problem of utilization of knowledge which is not
 given to anyone in its totality."
 
-How is this planning to be done so that the economy operate efficiently?
+How is planning to be done so that the economy operate efficiently?
 Should it be done by a central authority? Should it be divided among
 individuals? Should it be done by delegating it to some kind of representative
 for an industry or group of people?
@@ -61,7 +61,7 @@ coordinated utilization of resources, all based on the knowledge of each
 individual.
 
 >  The problem is precisely how to extend the span of our utilization or
->  resources beyond the span of the control o fany one mind; and therefore,
+>  resources beyond the span of the control of any one mind; and therefore,
 >  how to dispense with the need of conscious control, and how to provide
 >  inducements which will make the individuals do the desirable things without
 >  anyone having to tell them what to do.
