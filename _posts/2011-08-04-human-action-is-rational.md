@@ -12,7 +12,7 @@ of these were true, man would not act. In fact he would be in a state of
 satisfaction in which acting would result in a worse state of affairs.
 
 Mans current condition and possible future conditions are a subjective value.
-What one man values may not be what another values. In Human Action, Mises states that &#8220;each man is free to [choose] the relative values of his actions.&#8221; This can not be denied man, even in
+What one man values may not be what another values. In [Human Action](http://en.wikipedia.org/wiki/Human_Action), [Mises](http://en.wikipedia.org/wiki/Ludwig_von_Mises) states that &#8220;each man is free to [choose] the relative values of his actions.&#8221; This can not be denied man, even in
 a planned economy. Man will always value to his actions, wether that action is to
 continue to serve the authorities or to revolt. There is no universal &#8220;yardstick&#8221; when it comes to
 judging the value actions. One man may wish above all to achieve some &#8220;higher&#8221;
@@ -35,5 +35,3 @@ definition rational. The rationality of an action does not depend on the
 outcome. If a man believes that by chanting he can bring down rain and he
 begins to chant, he is acting rationally even if the means will not bring
 about the rain to fall.
-
-
