@@ -144,6 +144,10 @@ table tr td:first-child {
   border-left: 1px solid #666;
 }
 
+.footnotes {
+  border-top: 1px solid #CCC;
+  padding: 6px;
+}
 
 .ir { display: block; text-indent: -999em; overflow: hidden; background-repeat: no-repeat; text-align: left; direction: ltr; }
 .hidden { display: none; visibility: hidden; }
