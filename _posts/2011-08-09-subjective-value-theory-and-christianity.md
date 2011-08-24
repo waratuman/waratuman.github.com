@@ -62,7 +62,7 @@ are the what we value the most. As humans we each have decided what the idol
 we value the most, and we can not look away because we are under the illusion
 that the idol can bring us to a state of satisfaction. It is valued so much
 that it can causes to cross moral and ethical bounds we would not normally
-cross. The satisfaction that is brings is only temporary. It is likely that
+cross. The satisfaction that brings is only temporary. It is likely that
 we will return once again to our idols seeking more and more. It can be more
 money, more power, or more affection.
 
@@ -76,7 +76,7 @@ be famous, it is great to be safe, it is great rich, but it is only satisfying
 when God is first.
 
 God allowed every person to value what he wants. It is your life to live, free
-to make your own decisions. Bug God has warned us that the idols of the world
+to make your own decisions. But God has warned us that the idols of the world
 will not satisfy in the long run. Put your heart where you will, but it will
 only be satisfied in Christ.
 
