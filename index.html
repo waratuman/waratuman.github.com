@@ -10,15 +10,3 @@ title: Home
   </div>
 {% endfor %}
 
-
-<div id="navigation">
-  {% if paginator.previous_page == 1 %}
-    <a class="next" href="/">Next</a>
-  {% elsif paginator.page != 1 %}
-    <a class="next" href="/page{{ paginator.previous_page }}/">Next</a>
-  {% endif %}
-  {% if paginator.page != paginator.total_pages %}
-    <a class="previous" href="/page{{ paginator.next_page }}/">Previous</a>
-  {% endif %}
-  <div class="clear"></div>
-</div>
