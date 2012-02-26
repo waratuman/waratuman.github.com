@@ -4,25 +4,25 @@ author: James R. Bracy
 layout: post
 ---
 
-Web applications are taking new paths. JavaScript is playing a more important
+Web applications are taking new paths. [JavaScript](http://en.wikipedia.org/wiki/JavaScript) is playing a more important
 role when developing client applications, and I'm not talking server side. The
-simple HTML pages rendered on the server side just don't make the cut any
-more. JavaScript, HTML, CSS and other web technologies are even being used to
+simple [HTML](http://en.wikipedia.org/wiki/Html) pages rendered on the server side just don't make the cut any
+more. JavaScript, HTML, [CSS](http://en.wikipedia.org/wiki/Css) and other web technologies are even being used to
 create desktop and mobile applications. JavaScript has had a strange path
 though. If you are like me, you hate JavaScript. Yes it has good parts, but
 it has been really painful to develop an application in JavaScript. Frameworks
 have always been present when making desktop applications or mobile
-applications. The framework for developing iOS applications is amazing.
+applications. The framework for developing [iOS](http://en.wikipedia.org/wiki/IOS) applications is amazing.
 Applications built on web technologies have only recently started to see the
 emergence of frameworks to help build a self contained application using web
 technologies.
 
-Backbone.js is one of the best frameworks I have found, yet there is
+[Backbone.js](http://documentcloud.github.com/backbone/#View-render) is one of the best frameworks I have found, yet there is
 surprising little out there about it. People every once in a while would
 mention it, but no one could give me a solid idea of what it was. If you have
-ever developed a iOS application or a desktop application using an MVC
+ever developed a iOS application or a desktop application using an [MVC](http://en.wikipedia.org/wiki/Model–view–controller)
 framework you will feel right at home using Backbone.js. Coming from Rails
-I've always used Ruby, Rails, HTML, and JavaScript as though they were a part
+I've always used [Ruby](http://www.ruby-lang.org/en/), [Rails](http://rubyonrails.org/), HTML, and JavaScript as though they were a part
 of one application. When using Backbone.js it is much easier to think about
 the different parts of the application. Rails for the data storage, background
 processing and API. The Backbone.js app will make use of the Rails app, but
