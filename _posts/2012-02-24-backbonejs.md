@@ -246,5 +246,264 @@ see the following:
 
 <img class="right" src="/resources/images/posts/backbonejs/categories-view.png" alt="">
 
-Now we've done some basic rendering and application initialization. Next time
-we will look at the `ProcductsView` and introduce models and events.
+Now we've done some basic rendering and application initialization. Lets now
+look at making our first model that we can use for the `ProductsView`.
+
+Add the following to `application.js`.
+
+    var Product = Backbone.Model.extend({
+      defaults: {
+        categories: [],
+        traits: {}
+      }
+    });
+
+This is our `Product` model. We have given it a default attributes called
+`categories` that is just an empty array and a default attribute called
+`traits` which is essentially just an empty hash. To get an attribute from a
+Backbone.js model we do the following:
+
+    var product = new Product();
+    product.get('categories'); // = []
+    product.set('categories', ['Mugs']);
+    product.get('categories'); // = ['Mugs']
+
+Backbone.js also has something called collections. A collection helps manage
+an array of models. We will be using this in the `ProductsController`. Below
+we specify the model the `ProductCollection` with be using.
+
+    var ProductCollection = Backbone.Collection.extend({
+      model: Product
+    });
+
+Now let's create the `ProductsView` template and the `ProductsView` itself.
+Open `index.html` and type the template code:
+
+    <script id='products-view' type='text/html'>
+      <table>
+        <thead>
+          <tr>
+            <td>SKU</td>
+            <td>Name</td>
+            <td>Traits</td>
+            <td>Price</td>
+          </tr>
+        </thead>
+        <tbody>
+        </tbody>
+      </table>
+    </script>
+
+Now in `application.js` add the code for our view.
+    
+    var ProductsView = Backbone.View.extend({
+      el: '#products',
+      template: _.template($('#products-view').html()),
+
+      initialize: function () {
+        _.bindAll(this, 'render', 'appendProduct');
+        this.collection.bind('add', this.appendProduct);
+      },
+
+      appendProduct: function (product) {
+        var productView = new ProductView({model: product});
+        this.$el.find('tbody').append(productView.render().el);
+      },
+
+      render: function () {
+        this.$el.html('');
+        this.$el.append(this.template(this));
+        _(this.collection.models).each(this.appendProduct, this);
+      }
+    });
+
+A few things to note. The line `this.collection.bind('add', this.appendProduct);`
+triggers the function `appendProduct` to be called whenever an object has been
+added to the collection (products in this case). No need to manually call it
+when you insert a new product, the `appendProduct` function will simply get
+called and update the view as needed. The `appendProduct` function also makes
+reference to the `ProductView` (not `ProductsView`) which will be responsible
+for drawing a single product. Lets define this now:
+
+    var ProductView = Backbone.View.extend({
+      tagName: 'tr',
+      template: _.template($('#product-view').html()),
+
+      initialize: function () {
+        _.bindAll(this, 'render');
+        this.render();
+      },
+  
+      render: function () {
+        this.$el.html(this.template(this.model));
+        return this;
+      }
+    });
+
+Here we don't specify a `el` but instead give it a `tagName` which will get
+generated whenever we create the view. The `render` function at the end
+returns itself so that in the `appendProduct` function in the `ProductsView`
+we can chain our method calls and insert the DOM element like so
+`productView.render().el`; Otherwise we would just end up having longer code.
+
+And lets not forget the template for the `ProductView`:
+
+    <script id='product-view' type='text/html'>
+      <td><%= get('sku') %></td>
+      <td><%= get('name') %></td>
+      <td><%= _.keys(get('traits')).join(', ') %></td>
+      <td><%= get('price') %></td>
+    </script>
+
+And thats all! Here is `index.html` and `application.js` in their entirety.
+Below you can see how I updated the `ApplicationView` to support the rendering
+of the `ProductsView` and added a collection of products that it can access.
+
+    <!DOCTYPE html>
+    <html>
+      <head>
+        <meta charset="utf-8">
+        <title>products</title>
+      </head>
+      <body>
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/json2/20110223/json2.js"></script>
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.3.1/underscore-min.js"></script>
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/backbone.js/0.9.1/backbone-min.js"></script>
+
+        <script id='application-view' type='text/html'>
+          <header>
+            <h1><%= pageTitle %></h1>
+          </header>
+          <ul id='categories'></ul>
+          <div id='products'></div>
+        </script>
+
+        <script id='products-view' type='text/html'>
+          <table>
+            <thead>
+              <tr>
+                <td>SKU</td>
+                <td>Name</td>
+                <td>Traits</td>
+                <td>Price</td>
+              </tr>
+            </thead>
+            <tbody>
+
+            </tbody>
+          </table>
+        </script>
+
+        <script id='product-view' type='text/html'>
+          <td><%= get('sku') %></td>
+          <td><%= get('name') %></td>
+          <td><%= _.keys(get('traits')).join(', ') %></td>
+          <td><%= get('price') %></td>
+        </script>
+
+        <script src='application.js' type="text/javascript"></script>
+      </body>
+    </html>
+
+&nbsp;
+
+    var Product = Backbone.Model.extend({
+      defaults: {
+        categories: [],
+        traits: {}
+      }
+    });
+
+    var ProductCollection = Backbone.Collection.extend({
+      model: Product
+    });
+
+    var ApplicationView = Backbone.View.extend({
+        el: 'body',
+        template: _.template($('#application-view').html()),
+
+        initialize: function () {
+          _.bindAll(this, 'render', 'categoriesView', 'productsView');
+          this.pageTitle = 'Products';
+          this.products = new ProductCollection();
+          this.render();
+        },
+
+        categoriesView: function () {
+          if (typeof (this._categoriesView) === 'undefined') {
+            this._categoriesView = new CategoriesView();
+          }
+          return this._categoriesView;
+        },
+
+        productsView: function () {
+          if (typeof (this._productsView) === 'undefined') {
+            this._productsView = new ProductsView({collection: this.products});
+          }
+          return this._productsView;
+        },
+
+        render: function () {
+          this.$el.append(this.template(this));
+          this.categoriesView().render();
+          this.productsView().render();
+        }
+    });
+
+    var CategoriesView = Backbone.View.extend({
+      el: '#categories',
+      categories: ['Clothes', 'Household', 'Kitchen', 'Bed & Bath'],
+
+      initialize: function () { _.bindAll(this, 'render'); },
+
+      render: function () {
+        var self = this;
+        _.each(this.categories, function (category) {
+          self.$el.append('<li>' + category + '</li>');
+        });
+      }
+
+    });
+
+    var ProductsView = Backbone.View.extend({
+      el: '#products',
+      template: _.template($('#products-view').html()),
+
+      initialize: function () {
+        _.bindAll(this, 'render', 'appendProduct');
+        this.collection.bind('add', this.appendProduct);
+      },
+
+      appendProduct: function (product) {
+        var productView = new ProductView({model: product});
+        this.$el.find('tbody').append(productView.render().el);
+      },
+
+      render: function () {
+        this.$el.html('');
+        this.$el.append(this.template(this));
+        _(this.collection.models).each(this.appendProduct, this);
+      }
+    });
+
+    var ProductView = Backbone.View.extend({
+      tagName: 'tr',
+      template: _.template($('#product-view').html()),
+
+      initialize: function () {
+        _.bindAll(this, 'render');
+        this.render();
+      },
+
+      render: function () {
+        this.$el.html(this.template(this.model));
+        return this;
+      }
+    });
+
+    $(document).ready(function () {
+      var applicationView = new ApplicationView();
+      applicationView.products.add(new Product({sku: '123', name: 'Mug', price: '$5.00'}));
+    });
+    
