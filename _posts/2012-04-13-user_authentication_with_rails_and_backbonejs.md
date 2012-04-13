@@ -6,21 +6,27 @@ published: false
 ---
 
 [Backbone.js](http://documentcloud.github.com/backbone/) is a simple framework
-for developing web apps, but since are no conventions for developing these
-apps it is hard for the beginner to both understand what is going on and
+for developing web apps. Since are no conventions for developing these
+apps, it is hard for a beginner to both understand what is going on and
 learn because different sources will tell you different things. Once
+**[[you just said backbone is a simple framework and now you are
+saying that it is difficult to understand? That seems contradictory. I think I understand what you are trying to say since I have used
+backbone too. The api is fairly small and concise, but following the callback hell and understanding the conventions is difficult if 
+coming from a programming language of a different paradigm.]]**
 [Backbone.js](http://documentcloud.github.com/backbone/) has a bigger
-community these problems will probably alleviate themselves a little bit
-either by having the community settle on a general way to develop or by
+community these problems will probably alleviate themselves
+by either having the community settle on a general way to develop or by
 having multiple groups that develop with [Backbone.js](http://documentcloud.github.com/backbone/)
 in different ways yet are large enough to have great sources for the
-beginners.
+beginners. **[[run on sentence here]]**
 
-At 42Floors we use [Backbone.js](http://documentcloud.github.com/backbone/)
+At [42Floors](http://42Floors.com/) we use [Backbone.js](http://documentcloud.github.com/backbone/)
+**[[Instead saying a lot consider saying how much you use it. ie. At 42Floors our entire front end is backed by backbone. Or whatever it may be. Then you can get rid of the next line. Conciseness.]]
 a lot. If there is client side Javascript, it is using [Backbone.js](http://documentcloud.github.com/backbone/).
 One of the first problems that most web apps will encounter is creating and
-authenticating users. The following is out solution to this problem that is
+authenticating users. The following is our solution to this problem that is
 used on several of our internal tools.
+**[[Here our are solutions]]**
 
 Before we begin be sure you have [Ruby](http://www.ruby-lang.org/en/) and
 [Ruby on Rails](http://rubyonrails.org/) installed. If you are on a Mac,
@@ -31,6 +37,7 @@ because we will be using [SQLite](http://www.sqlite.org/) for this tutorial.
 ***
 
 At [42Floors](http://42floors.com/) we have an internal MLS for managing
+**[[what is MLS? maybe a link?]]**
 listings and properties. Let's start by creating a [Rails](http://rubyonrails.org/) app named `MLS`.
 Bring up the Terminal and `cd` to the directory which you want to create the
 app in. For me, I keep all my code that I'm working on in a directory named
@@ -45,15 +52,15 @@ After creating the app set your current working directory to `~/src/MLS` by
 
     $ cd mls
 
-Next create the `User` model that will be the basis for any account in our
+Next create the `User` model that will be the basis for an account in our
 system.
 
     $ rails generate model user
 
 The `rails generate model user` command will create a [migration](http://guides.rubyonrails.org/migrations.html)
 file in `db/migrations` and a file in `app/models` along with a few others.
-Open up the migration file using a text editor of your choice (TextMate in
-this case).
+Open up the migration file using a text editor of your choice (TextMate for
+me).
 
     $ mate db/migrate/20120411200952_create_users.rb
 
@@ -270,6 +277,7 @@ contain any application logic. We will need to create this directory first
 before adding the files.
 
     $ mkdir lib/assets/javascripts
+**[[the assets folder should be create by now, yeah? So no -p. Just double checking]]**
 
 Now just download the files:
 
@@ -962,25 +970,26 @@ let you through.
 
 This is only one of the ways to do authentication with [Rails](http://rubyonrails.org/).
 
-One downside to this approach is that after the User is authenticated the same
-request sent again to the server which then redirects to the home page of the
-app.
+One downside to this approach happens after the User is authenticated. Sending the same
+request again to the server will redirect to the home page of the app.
 
 A different approach would be to render the view with [Backbone.js](http://documentcloud.github.com/backbone/) on the
-client side. Things can get a little sticky though because then you start to
+client side. Things can get a little sticky with this approach because then you start to
 create an application that has state. If you don't want the website to be
 crawled by Google, Bing, or Yahoo this is fine. If you do want it to be
-crawled the server can render the view with all the data and the app can be
+crawled, the server can render the view with all the data and the app can be
 built to support multiple entry points based on the URL. I find this to be
-rather complicated though and haven't found a good way to deal with it.
+rather complicated and haven't found a good way to deal with it.
+**[[using though a lot in here]]**
 Instead I primarily use [Backbone.js](http://documentcloud.github.com/backbone/) to deal with updates and transitions on a
 certain page. Later down the road in this app we would have created a listings
 page that would paginate. When you move to the next page the next page is
 essentially the same.
+**[[why is this last little bit relevant? It seems a bit out of place. This is about user authentication and not how to build 42Floors ;)]]**
 
 To lean more about [Backbone.js](http://documentcloud.github.com/backbone/), visit the [docs](http://documentcloud.github.com/backbone/).
 Peepcode also has some great [screencasts](https://peepcode.com/products/backbone-js),
 they don't use the most recent version of [Backbone.js](http://documentcloud.github.com/backbone/), but its still full of
 great information. Some folks have even started writing a free eBook. [Check it
 out](https://github.com/addyosmani/backbone-fundamentals) for a deeper dive
-into [Backbone.js](http://documentcloud.github.com/backbone/).
+---
