@@ -345,7 +345,7 @@ Now we'll add the form for creating the user.
 If you start the [rails server](http://guides.rubyonrails.org/getting_started.html#starting-up-the-web-server)
 using `rails server` you should see the following when you go to `http://localhost:3000/signup`
 
-<p><img src='/resources/images/posts/2012-04-15-mls0.png' alt='' width='700' height='350'></p>
+<p><img src='http://waratuman.com/resources/images/posts/2012-04-15-mls0.png' alt='' width='700' height='350'></p>
 
 Lets add some styling to this. Open `app/assets/stylesheets/users.css.scss`
 and add the following CSS.
@@ -401,7 +401,7 @@ and add the following CSS.
 Save this file and then take a look at `http://localhost:3000/signup`. The
 page should look like the image below.
 
-<p><img src='/resources/images/posts/2012-04-15-mls1.png' alt='' width='700' height='350'></p>
+<p><img src='http://waratuman.com/resources/images/posts/2012-04-15-mls1.png' alt='' width='700' height='350'></p>
 
 Now lets start creating the first [Backbone.js](http://documentcloud.github.com/backbone/) view, `SignupView`. I like to
 keep my javascript files organized under the `app/assets/javascripts`
@@ -601,7 +601,7 @@ Lets update the CSS to highlight a `input.error` field in red. Open
 Go to `http://localhost:3001/signup` and try submitting the form. The fields
 with errors should now be highlighted.
 
-<p><img src='/resources/images/posts/2012-04-15-mls2.png' alt='' width='700' height='350'></p>
+<p><img src='http://waratuman.com/resources/images/posts/2012-04-15-mls2.png' alt='' width='700' height='350'></p>
 
 Go ahead and fill out the form. If it was successful you should see the
 standard welcome to [Rails](http://rubyonrails.org/) page.
@@ -949,7 +949,7 @@ it isn't necessary to directly instantiate a new User model.
 
 Now go to `http://localhost:3001/login` in a browser. It should look like this.
 
-<p><img src='/resources/images/posts/2012-04-15-mls3.png' alt='' width='700' height='350'></p>
+<p><img src='http://waratuman.com/resources/images/posts/2012-04-15-mls3.png' alt='' width='700' height='350'></p>
 
 Hit the submit button on the form. The form should shake letting you know that
 the credentials were incorrect.
