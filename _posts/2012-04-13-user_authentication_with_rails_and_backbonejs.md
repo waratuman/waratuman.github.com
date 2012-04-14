@@ -2,25 +2,20 @@
 title: User Authentication with Rails and Backbone.js
 author: James R. Bracy
 layout: post
-published: false
+
 ---
 
-[Backbone.js](http://documentcloud.github.com/backbone/) is a simple framework
-for developing web apps, but since are no conventions for developing these
-apps it is hard for the beginner to both understand what is going on and
-learn because different sources will tell you different things. Once
-[Backbone.js](http://documentcloud.github.com/backbone/) has a bigger
-community these problems will probably alleviate themselves a little bit
-either by having the community settle on a general way to develop or by
-having multiple groups that develop with [Backbone.js](http://documentcloud.github.com/backbone/)
-in different ways yet are large enough to have great sources for the
-beginners.
+[Backbone.js](http://documentcloud.github.com/backbone/) is a small framework
+for developing web apps. Since are no guiding conventions it can sometimes be
+default for the beginner to understand what is going on. Different sources
+have different ideas of how something should be done. The community is still
+young, but over time sources for beginners will grow.
 
-At 42Floors we use [Backbone.js](http://documentcloud.github.com/backbone/)
-a lot. If there is client side Javascript, it is using [Backbone.js](http://documentcloud.github.com/backbone/).
-One of the first problems that most web apps will encounter is creating and
-authenticating users. The following is out solution to this problem that is
-used on several of our internal tools.
+[Backbone.js](http://documentcloud.github.com/backbone/) is used for almost
+all [JavaScript](http://en.wikipedia.org/wiki/JavaScript) front end development at [42Floors](http://42floors.com). One
+of the first problems that most web apps will encounter is creating and
+authenticating users. The following is our solution to this problem and is
+used with several of our internal tools.
 
 Before we begin be sure you have [Ruby](http://www.ruby-lang.org/en/) and
 [Ruby on Rails](http://rubyonrails.org/) installed. If you are on a Mac,
@@ -30,8 +25,9 @@ because we will be using [SQLite](http://www.sqlite.org/) for this tutorial.
 
 ***
 
-At [42Floors](http://42floors.com/) we have an internal MLS for managing
-listings and properties. Let's start by creating a [Rails](http://rubyonrails.org/) app named `MLS`.
+At [42Floors](http://42floors.com/) we have an internal [MLS](http://en.wikipedia.org/wiki/Multiple_listing_service)
+(a database of available listings) for managing listings and properties. Let's
+start by creating a [Rails](http://rubyonrails.org/) app named `MLS`.
 Bring up the Terminal and `cd` to the directory which you want to create the
 app in. For me, I keep all my code that I'm working on in a directory named
 `src`, so I'm going to `cd ~/src`.
@@ -967,20 +963,16 @@ request sent again to the server which then redirects to the home page of the
 app.
 
 A different approach would be to render the view with [Backbone.js](http://documentcloud.github.com/backbone/) on the
-client side. Things can get a little sticky though because then you start to
-create an application that has state. If you don't want the website to be
-crawled by Google, Bing, or Yahoo this is fine. If you do want it to be
-crawled the server can render the view with all the data and the app can be
-built to support multiple entry points based on the URL. I find this to be
-rather complicated though and haven't found a good way to deal with it.
-Instead I primarily use [Backbone.js](http://documentcloud.github.com/backbone/) to deal with updates and transitions on a
-certain page. Later down the road in this app we would have created a listings
-page that would paginate. When you move to the next page the next page is
-essentially the same.
+client side. This can get sticky because the application has state. If the
+website doesn't need to be indexed by Google, Bing, or Yahoo it works fine.
+If it does then the server can render the view with all the data and the app
+can be support multiple entry points based on the URL. This can also get
+complicated as every page can either be rendered on the client side
+(which has state) or the server (which does not have state)  and both need to
+end up outputting the same thing. I haven't found a good way to deal with this yet.
 
 To lean more about [Backbone.js](http://documentcloud.github.com/backbone/), visit the [docs](http://documentcloud.github.com/backbone/).
 Peepcode also has some great [screencasts](https://peepcode.com/products/backbone-js),
 they don't use the most recent version of [Backbone.js](http://documentcloud.github.com/backbone/), but its still full of
-great information. Some folks have even started writing a free eBook. [Check it
-out](https://github.com/addyosmani/backbone-fundamentals) for a deeper dive
+great information. Some folks have even started writing a free eBook. [Check it out](https://github.com/addyosmani/backbone-fundamentals) for a deeper dive
 into [Backbone.js](http://documentcloud.github.com/backbone/).
