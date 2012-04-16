@@ -6,9 +6,9 @@ published: false
 ---
 
 [Backbone.js](http://documentcloud.github.com/backbone/) is a small framework
-for developing web apps. Since are no guiding conventions it can sometimes be
-default for the beginner to understand what is going on. Different sources
-have different ideas of how something should be done. The community is still
+for developing web apps. Since there are no guiding conventions it can sometimes be
+difficult for the beginner to understand what is going on. The early contributors
+have different ideas of how things should be done. The community is still
 young, but over time sources for beginners will grow.
 
 [Backbone.js](http://documentcloud.github.com/backbone/) is used for almost
@@ -959,8 +959,7 @@ let you through.
 This is only one of the ways to do authentication with [Rails](http://rubyonrails.org/).
 
 One downside to this approach is that after the User is authenticated the same
-request sent again to the server which then redirects to the home page of the
-app.
+request sent again to the server will redirect to the home page of the app.
 
 A different approach would be to render the view with [Backbone.js](http://documentcloud.github.com/backbone/) on the
 client side. This can get sticky because the application has state. If the
@@ -971,8 +970,8 @@ complicated as every page can either be rendered on the client side
 (which has state) or the server (which does not have state)  and both need to
 end up outputting the same thing. I haven't found a good way to deal with this yet.
 
-To lean more about [Backbone.js](http://documentcloud.github.com/backbone/), visit the [docs](http://documentcloud.github.com/backbone/).
-Peepcode also has some great [screencasts](https://peepcode.com/products/backbone-js),
-they don't use the most recent version of [Backbone.js](http://documentcloud.github.com/backbone/), but its still full of
+To learn more about [Backbone.js](http://documentcloud.github.com/backbone/), visit the [docs](http://documentcloud.github.com/backbone/).
+Peepcode also has some great [screencasts](https://peepcode.com/products/backbone-js).
+They don't use the most recent version of [Backbone.js](http://documentcloud.github.com/backbone/), but its still full of
 great information. Some folks have even started writing a free eBook. [Check it out](https://github.com/addyosmani/backbone-fundamentals) for a deeper dive
 into [Backbone.js](http://documentcloud.github.com/backbone/).
