@@ -958,8 +958,8 @@ let you through.
 
 This is only one of the ways to do authentication with [Rails](http://rubyonrails.org/).
 
-One downside to this approach is that after the User is authenticated the same
-request sent again to the server will redirect to the home page of the app.
+One downside to this approach is that after the user is authenticated the same
+request is sent again to the server will redirect to the home page of the app.
 
 A different approach would be to render the view with [Backbone.js](http://documentcloud.github.com/backbone/) on the
 client side. This can get sticky because the application has state. If the
