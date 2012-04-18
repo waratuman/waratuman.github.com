@@ -290,7 +290,6 @@ There are two views that we are going to need to create. First is the signup
 form (the url `/signup` or `/account/new`) and the second it the login
 (`/account`). Create `new.html.erb` and open it.
 
-    $ touch app/views/users/new.html.erb
     $ mate app/views/users/new.html.erb
 
 Now we'll add the form for creating the user.
@@ -410,7 +409,6 @@ under the `app/` directory. Create the folders `models` and `views` in
 
 Create the `signupView.js` file and open it for editing.
 
-    $ touch app/assets/javascripts/views/signupView.js
     $ mate app/assets/javascripts/views/signupView.js
 
 Update the file to define our view:
@@ -498,7 +496,6 @@ Now lets create our `User` model for [Backbone.js](http://documentcloud.github.c
 a user from what is entered in the signup form. Open
 `app/assets/javascripts/models/user.js`.
 
-    $ touch app/assets/javascripts/models/user.js
     $ mate app/assets/javascripts/models/user.js
 
 And add the model definition.
@@ -730,7 +727,6 @@ Don't forget about the routes in `config/routes.rb`.
 Now back to the views and [Backbone.js](http://documentcloud.github.com/backbone/). Create the `app/views/sessions/new.html.erb`
 file and open it up for editing.
 
-    $ touch app/views/sessions/new.html.erb
     $ mate app/views/sessions/new.html.erb
 
 Create the view.
@@ -753,57 +749,56 @@ Create the view.
 
 Add some styling in `app/assets/stylesheets/sessions.css.scss`.
 
-  #login-view {
-    width: 670px;
-    position: relative;
-    margin: 100px auto;
-    background: #FFF;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    -ms-border-radius: 5px;
-    -o-border-radius: 5px;
-    border-radius: 5px;
-    -webkit-box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.2);
-    -moz-box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.2);
-    box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.2);
-    background: #FFF;
+    #login-view {
+      width: 670px;
+      position: relative;
+      margin: 100px auto;
+      background: #FFF;
+      -webkit-border-radius: 5px;
+      -moz-border-radius: 5px;
+      -ms-border-radius: 5px;
+      -o-border-radius: 5px;
+      border-radius: 5px;
+      -webkit-box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.2);
+      -moz-box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.2);
+      box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.2);
+      background: #FFF;
 
-    aside {
-      -moz-box-sizing:    border-box;
-      -webkit-box-sizing: border-box;
-      box-sizing:        border-box;
-      width: 270px;
-      float: left;
-      margin: 0;
-      text-align: center;
-      padding: 75px 0;
-      margin-right: 15px;
-    }
+      aside {
+        -moz-box-sizing:    border-box;
+        -webkit-box-sizing: border-box;
+        box-sizing:        border-box;
+        width: 270px;
+        float: left;
+        margin: 0;
+        text-align: center;
+        padding: 75px 0;
+        margin-right: 15px;
+      }
 
-    form {
-      -moz-box-sizing:    border-box;
-      -webkit-box-sizing: border-box;
-      box-sizing:        border-box;
-      margin: 0;
-      width: 385px;
-      float: left;
-      padding: 30px 30px 30px 45px;
-      border-left: 1px solid #D8DEE2;
+      form {
+        -moz-box-sizing:    border-box;
+        -webkit-box-sizing: border-box;
+        box-sizing:        border-box;
+        margin: 0;
+        width: 385px;
+        float: left;
+        padding: 30px 30px 30px 45px;
+        border-left: 1px solid #D8DEE2;
 
-      label { width: 310px; display: inline-block; margin-top: 10px; }
-      input { margin-bottom: 10px; }
-      input[type=text], input[type=password] { width: 300px }
-      input[type=submit] {
-        float: right;
-        margin-top: 10px;
-        display: block;
+        label { width: 310px; display: inline-block; margin-top: 10px; }
+        input { margin-bottom: 10px; }
+        input[type=text], input[type=password] { width: 300px }
+        input[type=submit] {
+          float: right;
+          margin-top: 10px;
+          display: block;
+        }
       }
     }
-  }
 
 Now the [Backbone.js](http://documentcloud.github.com/backbone/) side of things. Create and open `app/assets/javascripts/views/loginView.js`.
 
-    $ touch app/assets/javascripts/views/loginView.js
     $ mate app/assets/javascripts/views/loginView.js
 
 Define the view.
@@ -943,7 +938,7 @@ The `authenticate` method will submit an [AJAX](http://en.wikipedia.org/wiki/Aja
 credentials are correct. The `User.authorize` is just a helper method so
 it isn't necessary to directly instantiate a new User model.
 
-Now go to `http://localhost:3001/login` in a browser. It should look like this.
+Now go to `http://localhost:3000/login` in a browser. It should look like this.
 
 <p><img src='http://waratuman.com/resources/images/posts/2012-04-15-mls3.png' alt='' width='700' height='350'></p>
 
