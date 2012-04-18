@@ -945,7 +945,7 @@ Now go to `http://localhost:3000/login` in a browser. It should look like this.
 Hit the submit button on the form. The form should shake letting you know that
 the credentials were incorrect.
 
-Sign up for the app at `http://localhost:3001/signup`. Then go to
+Sign up for the app at `http://localhost:3000/signup`. Then go to
 `http://localhost:3001/login`. If you enter the correct credentials it will
 let you through.
 
