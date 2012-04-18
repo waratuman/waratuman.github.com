@@ -39,7 +39,7 @@ The `rails new MLS` will generate an app named MLS in a directory called `MLS`.
 After creating the app set your current working directory to `~/src/MLS` by
 `cd` into it.
 
-    $ cd mls
+    $ cd MLS
 
 Next create the `User` model that will be the basis for any account in our
 system.
@@ -594,7 +594,7 @@ Lets update the CSS to highlight a `input.error` field in red. Open
 
     input.error { border: 2px solid red; }
 
-Go to `http://localhost:3001/signup` and try submitting the form. The fields
+Go to `http://localhost:3000/signup` and try submitting the form. The fields
 with errors should now be highlighted.
 
 <p><img src='http://waratuman.com/resources/images/posts/2012-04-15-mls2.png' alt='' width='700' height='350'></p>
