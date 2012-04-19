@@ -2,7 +2,6 @@
 title: User Authentication with Rails and Backbone.js
 author: James R. Bracy
 layout: post
-published: false
 ---
 
 [Backbone.js](http://documentcloud.github.com/backbone/) is a small framework
@@ -970,3 +969,16 @@ Peepcode also has some great [screencasts](https://peepcode.com/products/backbon
 They don't use the most recent version of [Backbone.js](http://documentcloud.github.com/backbone/), but its still full of
 great information. Some folks have even started writing a free eBook. [Check it out](https://github.com/addyosmani/backbone-fundamentals) for a deeper dive
 into [Backbone.js](http://documentcloud.github.com/backbone/).
+
+***
+
+A quick note about security. By default [Rails](http://rubyonrails.org/) uses
+cookies to store session data. The user will be able to see what is stored in
+the cookie. However [Rails](http://rubyonrails.org/) does [sign](http://api.rubyonrails.org/classes/ActionDispatch/Session/CookieStore.html)
+the cookie to prevent the user from tampering with it.
+
+[HTTPS](http://en.wikipedia.org/wiki/HTTP_Secure) should also be used on the login and
+signup pages. The downside of this is that you may run into issues when
+caching parts of the page. Ideally we would just make the [AJAX](http://en.wikipedia.org/wiki/Ajax_(programming)) request when
+the users submits the form over [HTTPS](http://en.wikipedia.org/wiki/HTTP_Secure). The `force_ssl` feature in [Rails](http://api.rubyonrails.org/classes/ActionController/ForceSSL/ClassMethods.html)
+can be used to force an action to use [HTTPS](http://en.wikipedia.org/wiki/HTTP_Secure).
