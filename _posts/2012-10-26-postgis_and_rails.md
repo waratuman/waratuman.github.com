@@ -7,13 +7,11 @@ layout: post
 [PostGIS](http://postgis.refractions.net/) is and extension for
 [PostgreSQL](http://www.postgresql.org/) that adds support for geographic
 objects. [Daniel Azuma](http://www.daniel-azuma.com/) has developed a suite of
-tools for [Rails](http://rubyonrails.org/) that enable it to process
-geographic data.
+tools for [Rails](http://rubyonrails.org/) to process geographic data.
 
-Even though tools have made working with geo-spacial data easier, setting up
-an environment, however, is still a bit of work. This tutorial will walk
-through setting [PostGIS](http://postgis.refractions.net/) for 
-[Rails](http://rubyonrails.org/).
+Working with geo-spacial data has gotten easier, but setting up
+an environment, is still a bit of work. This tutorial will walk through
+setting up [PostGIS](http://postgis.refractions.net/) for [Rails](http://rubyonrails.org/).
 
 ## Dependencies
 
