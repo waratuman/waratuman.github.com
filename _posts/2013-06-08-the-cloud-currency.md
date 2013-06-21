@@ -2,6 +2,7 @@
 title: The Cloud Currency
 author: James R. Bracy
 layout: post
+permalink: /:year/:month/:day/:title
 ---
 
 [Bitcoin](http://bitcoin.org/en/) is quickly becoming the currency of the internet. It will never replace federally issued
