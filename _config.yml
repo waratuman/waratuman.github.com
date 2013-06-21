@@ -2,9 +2,7 @@ title: waratuman
 author: James R. Bracy
 permalink: none
 paginate: 1
-auto: true
-server: true
-server_port: 3000
+port: 3000
 markdown: rdiscount
 paginate: 1
 permalink: /:year/:month/:day/:title
