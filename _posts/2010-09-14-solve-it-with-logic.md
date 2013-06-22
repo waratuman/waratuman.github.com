@@ -2,6 +2,7 @@
 title: Solve it with Logic
 author: James R. Bracy
 layout: post
+font: sans
 ---
 
 Back during my freshman year of college the Computer Science 101 course

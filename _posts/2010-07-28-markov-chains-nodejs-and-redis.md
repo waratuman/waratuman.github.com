@@ -2,6 +2,7 @@
 title: Markov Chains, Node.js, and Redis
 author: James R. Bracy
 layout: post
+font: sans
 ---
 
 Today's task is to create pseudo random text by using a [Markov Chain](http://en.wikipedia.org/wiki/Markov_chain). [Redis](http://code.google.com/p/redis/)

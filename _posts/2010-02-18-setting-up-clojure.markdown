@@ -2,6 +2,7 @@
 title: Installing Clojure on Mac OS X
 author: James R. Bracy
 layout: post
+font: sans
 tags:
   - Clojure
   - java

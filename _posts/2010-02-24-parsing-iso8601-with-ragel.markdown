@@ -2,6 +2,7 @@
 title: Parsing ISO8601 with Ragel
 author: James R. Bracy
 layout: post
+font: sans
 tags:
   - Ragel
   - Clojure

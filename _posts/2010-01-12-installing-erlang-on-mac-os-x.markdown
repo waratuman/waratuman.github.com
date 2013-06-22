@@ -2,6 +2,7 @@
 title: Installing Erlang on Mac OS X
 author: James R. Bracy
 layout: post
+font: sans
 tags:
   - Erlang
   - Mac

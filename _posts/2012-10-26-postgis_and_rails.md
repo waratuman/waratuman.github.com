@@ -2,6 +2,7 @@
 title: PostGIS and Rails
 author: James R. Bracy
 layout: post
+font: sans
 ---
 
 [PostGIS](http://postgis.refractions.net/) is and extension for

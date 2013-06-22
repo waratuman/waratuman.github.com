@@ -2,9 +2,12 @@
 layout: application
 ---
 
-<div class="post">
-  <h1>{{ page.title }}</h1>
-  
-  {{ content }}
-  <div class="clear"></div>
+<div class="post {{ page.font }}">
+    {% unless page.title_fr %}
+        <h1>{{ page.title }}</h1>
+        <hr/>
+    {% endunless %}
+
+    {{ content }}
+
 </div>

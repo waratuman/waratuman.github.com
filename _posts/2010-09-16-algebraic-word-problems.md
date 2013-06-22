@@ -2,6 +2,7 @@
 title: Algebraic Word Problems
 author: James R. Bracy
 layout: post
+font: sans
 ---
 
 The next section in the book *Problem Solving Through Recreation 
