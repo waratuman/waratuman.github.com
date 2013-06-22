@@ -1,11 +1,10 @@
 title: waratuman
 author: James R. Bracy
-permalink: none
+permalink: /:year/:month/:day/:title
 paginate: 1
 port: 3000
 markdown: rdiscount
 paginate: 1
-permalink: /:year/:month/:day/:title
 safe: true
 lsi: false
 pygments: true
