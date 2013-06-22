@@ -6,54 +6,39 @@
   <title>{{ page.title }}</title>
   <meta name="description" content="The blog of James R. Bracy (waratuman).">
   <meta name="author" content="James R. Bracy">
-  <link rel="stylesheet" href="/resources/css/application.css">
+  <link rel="stylesheet" href="/assets/application.css">
 </head>
 
 <body>
-  <div id='container' class='container'>
-    <div class='row'>
-      <div id="content" class='span12'>
-        {{ content }}
-      </div>
-      <div id='profile' class='span4'>
-        <address>
-          <strong><a href='/'>James R. Bracy</a></strong><br/>
-        </address>
-        <a href="https://twitter.com/#!/waratuman" target="_blank" class='link'>
-          <img src="/resources/images/twitter.png" alt="twitter" width="16" height="16" class='icon' />
-        </a>
-        <a href="https://www.facebook.com/waratuman" target="_blank" class='link'>
-          <img src="/resources/images/facebook.png" alt="facebook" width="16" height="16" class='icon' />
-        </a>
-        <a href="https://www.linkedin.com/in/waratuman" target="_blank" class='link'>
-          <img src="/resources/images/linkedin.png" alt="linked" width="16" height="16" class='icon' />
-        </a>
-        
-        <div class='clear'></div>
-        <ul class='unstyled'>
-          <li><a href="/posts.html">All Posts</a></li>
-          <li><a href="/about.html">About</a></li>
-        </ul>
-      </div>
+    <div id='header'>
+        <a href='/'>waratuman</a>
     </div>
     
-    <footer id="footer">
-      Copyright &copy; 2011 James R. Bracy
-    </footer>
-  </div>
-
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.js"></script>
-  <script>window.jQuery || document.write("<script src='/resources/js/jquery-1.5.1.min.js'>\x3C/script>")</script>
-
-  <script>
-    var _gaq=[["_setAccount","UA-12558350-1"],["_trackPageview"]]; // Change UA-XXXXX-X to be your site's ID 
-    (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];g.async=1;
-    g.src=("https:"==location.protocol?"//ssl":"//www")+".google-analytics.com/ga.js";
-    s.parentNode.insertBefore(g,s)}(document,"script"));
-  </script>
-  
-  <!--[if lt IE 9]>
-    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-  <![endif]-->
+    <div id='content'>
+        {{ content }}
+    </div>
+    
+    <div id='footer'>
+        <div class='left'>
+            <a href='/posts.html'>All Posts</a>
+            | <a href="https://twitter.com/#!/waratuman" target="_blank" class='link'>twitter</a>
+            | <a href="https://www.facebook.com/waratuman" target="_blank" class='link'>facebook</a>
+            | <a href="https://www.linkedin.com/in/waratuman" target="_blank" class='link'>linkedin</a>
+        </div>
+        <div class='right'>
+            Copyright &copy; 2013 James R. Bracy
+        </div>
+    </div>
+    
+    <script type='text/javascript'>
+      var _gaq=[["_setAccount","UA-12558350-1"],["_trackPageview"]];
+      (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];g.async=1;
+      g.src=("https:"==location.protocol?"//ssl":"//www")+".google-analytics.com/ga.js";
+      s.parentNode.insertBefore(g,s)}(document,"script"));
+    </script>
+    
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
 </body>
 </html>

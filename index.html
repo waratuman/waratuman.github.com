@@ -4,10 +4,12 @@ title: Home
 ---
 
 {% for post in paginator.posts %}
-  <div class="post">
-    <h1><a href='{{ post.url }}'>{{ post.title }}</a></h1>
-    {{ post.content }}
-  </div>
+    <div class="post {{ post.font }}">
+        {% unless post.title_fr %}
+        <h1>{{ post.title }}</h1>
+        <hr/>
+        {% endunless %}
+  
+        {{ post.content }}
+    </div>
 {% endfor %}
-
-<!-- {{ site.time | date: "%Y-%m-%dT%H:%M:%S" }} -->

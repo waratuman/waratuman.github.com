@@ -2,6 +2,7 @@
 title: User Authentication with Rails and Backbone.js
 author: James R. Bracy
 layout: post
+font: sans
 ---
 
 [Backbone.js](http://documentcloud.github.com/backbone/) is a small framework

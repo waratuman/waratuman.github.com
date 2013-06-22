@@ -2,6 +2,7 @@
 title: Vectors in Ada
 author: James R. Bracy
 layout: post
+font: sans
 tags:
   - Ada
   - gnat

@@ -2,6 +2,7 @@
 title: Backbone.js
 author: James R. Bracy
 layout: post
+font: sans
 ---
 
 Web applications are taking new paths. [JavaScript](http://en.wikipedia.org/wiki/JavaScript) is playing a more important

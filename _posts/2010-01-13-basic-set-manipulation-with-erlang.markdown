@@ -2,6 +2,7 @@
 title: Basic Set Manipulation With Erlang
 author: James R. Bracy
 layout: post
+font: sans
 tags:
   - Erlang
   - Sets

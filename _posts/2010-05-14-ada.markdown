@@ -2,6 +2,7 @@
 title: A Tangent into Ada
 author: James R. Bracy
 layout: post
+font: sans
 tags:
   - Ada
   - gnat

@@ -2,6 +2,7 @@
 title: Apple Push Notifications with Heroku
 author: James R. Bracy
 layout: post
+font: sans
 ---
 
 Most people think they can't deliver push notifications to [iOS](http://www.apple.com/iphone/ios4/) devices from
