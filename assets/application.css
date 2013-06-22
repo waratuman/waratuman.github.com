@@ -611,18 +611,19 @@ pre {
   word-wrap: break-word; }
 
 a {
-  color: #0069d6; }
+  color: #222222; }
 
 a:hover {
-  color: #00438a; }
+  color: black; }
 
 #header {
   font-size: 12px;
   font-family: 'PT Sans', sans-serif;
   text-transform: uppercase;
-  border-bottom: 2px solid #00448b;
+  border-bottom: 2px solid #333;
   padding: 0 4px; }
   #header a {
+    color: #777;
     width: 960px;
     margin: auto;
     display: block;
@@ -639,8 +640,10 @@ a:hover {
   padding: 19px;
   font-size: 12px;
   font-family: 'PT Sans', sans-serif;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  color: #777; }
   #footer a {
+    color: #777;
     text-decoration: none; }
   #footer a:hover {
     text-decoration: underline; }

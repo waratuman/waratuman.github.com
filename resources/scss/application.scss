@@ -11,12 +11,13 @@
 	font-size: 12px;
 	font-family: 'PT Sans', sans-serif;
 	text-transform: uppercase;
-	border-bottom: 2px solid $baseColor;
+	border-bottom: 2px solid #333;
     // color: #fbf5ff;
 	padding: 0 4px;
 	
 	a {
-    	width: 960px;
+        color: #777;
+        width: 960px;
     	margin: auto;
         display: block;
         text-decoration: none;
@@ -36,8 +37,9 @@
 	font-size: 12px;
 	font-family: 'PT Sans', sans-serif;
 	text-transform: uppercase;
-	
-	a { text-decoration: none; }
+	color: #777;
+    
+	a { color: #777; text-decoration: none; }
 	a:hover { text-decoration: underline; }
 	
 	.left {
