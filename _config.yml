@@ -7,4 +7,4 @@ markdown: rdiscount
 paginate: 1
 safe: true
 lsi: false
-pygments: true
+highlighter: true
